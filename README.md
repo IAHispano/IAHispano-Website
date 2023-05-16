@@ -26,11 +26,10 @@ Distributed under the MIT License. See [LICENSE.txt](https://github.com/IAHispan
 
 ## 📧 Contact
 contacto@iahispano.com
-
-##
+\
+\
 Thank you for your interest in the IA Hispano website. 
 We appreciate your contributions and look forward to your involvement in our project. 
-
 Happy coding! 💻
 
 
