@@ -1,25 +1,25 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
-body{
+body {
   min-height: 100vh;
 }
 
-.row{
+.row {
   display: flex;
 }
-.col{
+.col {
   flex: 1;
   margin: 0 1rem;
   border: 1px solid black;
 }
 
-.main-gradient-text{
-  background: -webkit-linear-gradient(0deg, #CB5EEE 25%, #4BE1EC 70%);
+.main-gradient-text {
+  background: -webkit-linear-gradient(0deg, #cb5eee 25%, #4be1ec 70%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
