@@ -20,7 +20,14 @@ We value the contributions made by our community of developers. If you would lik
 
 [![Contributors](https://contrib.rocks/image?repo=iahispano/web)](https://github.com/IAHispano/web/graphs/contributors)
 
-## 
+
+## 😊 License
+Distributed under the MIT License. See [LICENSE.txt](https://github.com/IAHispano/website/blob/main/LICENSE) for more information.
+
+## 📧 Contact
+contacto@iahispano.com
+
+##
 Thank you for your interest in the IA Hispano website. 
 We appreciate your contributions and look forward to your involvement in our project. 
 
