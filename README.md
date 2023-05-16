@@ -14,6 +14,11 @@ To ensure a smooth development process and maintain code quality, we follow cert
 
 Contributors are encouraged to follow these code rules to maintain the integrity of the project and facilitate collaboration among team members.
 
+## 📎 Useful links
+[Access to Trello with all pending tasks ⏰](https://trello.com/b/w9jg37Bm/ia-hispano-web-development)
+\
+[Access to the Figma with all the designs of how the page should look like 🎨](https://www.figma.com/proto/uWhgqBnFpGIyiD6r3LFJVL/IA-Hispano)
+
 ## 👥 Contributors
 
 We value the contributions made by our community of developers. If you would like to see the list of contributors to the IA Hispano website, you can view the graphical representation of contributions using the image below:
