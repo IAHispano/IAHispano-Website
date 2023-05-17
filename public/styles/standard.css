@@ -15,13 +15,12 @@
 .bold {
   font-weight: 900;
 }
-.semibold{
+.semibold {
   font-weight: 700;
 }
-.text-center{
+.text-center {
   text-align: center;
 }
-
 
 .navbar-container {
   border-radius: 0px 0px 22px 22px;
@@ -87,7 +86,6 @@
   border-radius: 36px;
 }
 .button-xl {
-  
   font-weight: 700;
   padding: 10px 40px;
 }
@@ -194,7 +192,6 @@ a {
   .mobile-menu.active {
     display: block;
   }
-  
 
   .nav-stack {
     display: none;
@@ -207,7 +204,7 @@ a {
     margin: 5px 0;
     transition: background-color 0.3s ease;
   }
-  
+
   .menu-toggle .icon:before,
   .menu-toggle .icon:after {
     content: "";
@@ -217,39 +214,38 @@ a {
     background-color: #fff;
     transition: background-color 0.3s ease;
   }
-  
+
   .menu-toggle .icon:before {
     transform: translateY(-10px);
   }
-  
+
   .menu-toggle .icon:after {
     transform: translateY(10px);
   }
-  
+
   .menu-toggle.active .icon {
     background-color: transparent;
   }
-  
+
   .menu-toggle.active .icon:before {
     transform: translateY(0) rotate(45deg);
   }
-  
+
   .menu-toggle.active .icon:after {
     transform: translateY(0) rotate(-45deg);
   }
-  
 }
 
-.content .title{
+.content .title {
   font-size: 64px;
   margin-top: 60px;
-  margin-bottom: 20px
+  margin-bottom: 20px;
 }
-.content .subtitle{
+.content .subtitle {
   margin: auto 20px;
 }
 
-.service-box{
+.service-box {
   position: relative;
   background: #000;
   border: 1px solid transparent;
@@ -261,10 +257,10 @@ a {
   margin: 30px 40px;
   display: flex;
   flex-direction: column;
-  max-width: 400px; 
-  min-width: 300px; 
+  max-width: 400px;
+  min-width: 300px;
 }
-.service-box::after{
+.service-box::after {
   position: absolute;
   top: -2px;
   bottom: -2px;
@@ -274,27 +270,25 @@ a {
   content: "";
   z-index: -1;
   border-radius: 24px;
-
 }
 
-.service-box .service-title{
+.service-box .service-title {
   display: inline-block;
   text-align: center;
   font-weight: 700;
   font-size: 26px;
   border-bottom: 1px solid #fff;
   margin: auto;
-  margin-top: 30px
-  
+  margin-top: 30px;
 }
-.service-box .service-description{
+.service-box .service-description {
   margin: auto 30px;
   font-size: 26px;
 }
-.service-box .service-description ul li{
+.service-box .service-description ul li {
   margin-top: 30px;
 }
-.service-box .primary-button{
+.service-box .primary-button {
   display: block;
   margin: 10px 40px;
   margin-top: 80px;
@@ -302,16 +296,16 @@ a {
   border-radius: 25px;
   font-weight: 700;
 }
-.service-box .primary-button::after{
+.service-box .primary-button::after {
   border-radius: 25px;
 }
-.service-comment{
+.service-comment {
   font-style: italic;
   color: #9f9f9f;
   font-size: 14px;
   text-align: center;
   font-weight: 400;
 }
-.button-container{
+.button-container {
   z-index: 2;
 }

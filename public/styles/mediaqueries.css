@@ -1,17 +1,16 @@
-.text-sm{
-  font-size: 18px ;
+.text-sm {
+  font-size: 18px;
 }
-.text-md{
-  font-size: 24px ;
+.text-md {
+  font-size: 24px;
 }
-.text-lg{
-  font-size: 32px ;
+.text-lg {
+  font-size: 32px;
 }
-.text-xl{
+.text-xl {
   font-size: 38px;
   line-height: 38px;
 }
-
 
 /* Small devices (landscape phones, 640px and up) */
 @media (min-width: 640px) {
@@ -19,25 +18,23 @@
     width: 640px;
     margin: auto;
   }
-  .text-sm{
-    font-size: 18px ;
+  .text-sm {
+    font-size: 18px;
   }
-  .text-md{
-    font-size: 24px ;
+  .text-md {
+    font-size: 24px;
   }
-  .text-lg{
-    font-size: 48px ;
+  .text-lg {
+    font-size: 48px;
   }
-  .text-xl{
+  .text-xl {
     font-size: 74px;
     line-height: 74px;
   }
-  
-  
 }
 @media (max-width: 640px) {
-  .service-box{
-    margin:0;
+  .service-box {
+    margin: 0;
     margin-top: 30px;
   }
 }
@@ -48,26 +45,25 @@
     width: 768px;
     margin: auto;
   }
-  .text-sm{
-    font-size: 14px ;
+  .text-sm {
+    font-size: 14px;
   }
-  .text-md{
-    font-size: 32px ;
+  .text-md {
+    font-size: 32px;
   }
-  .text-lg{
-    font-size: 40px ;
+  .text-lg {
+    font-size: 40px;
   }
-  .text-xl{
+  .text-xl {
     font-size: 90px;
     line-height: 90px;
   }
-  .menu-toggle{
+  .menu-toggle {
     display: none;
   }
-  .button-xl{
+  .button-xl {
     padding: 20px 160px;
   }
-  
 }
 
 /* Large devices (desktops, 1024px and up) */
@@ -76,16 +72,16 @@
     width: 1024px;
     margin: auto;
   }
-  .text-sm{
-    font-size: 14px ;
+  .text-sm {
+    font-size: 14px;
   }
-  .text-md{
-    font-size: 32px ;
+  .text-md {
+    font-size: 32px;
   }
-  .text-lg{
-    font-size: 40px ;
+  .text-lg {
+    font-size: 40px;
   }
-  .text-xl{
+  .text-xl {
     font-size: 114px;
     line-height: 114px;
   }
@@ -97,17 +93,17 @@
     width: 1280px;
     margin: auto;
   }
-  .text-sm{
-    font-size: 14px ;
+  .text-sm {
+    font-size: 14px;
   }
-  .text-md{
-    font-size: 32px ;
+  .text-md {
+    font-size: 32px;
   }
-  .text-lg{
-    font-size: 40px ;
+  .text-lg {
+    font-size: 40px;
   }
-  .text-xl{
-    font-size: 128px ;
+  .text-xl {
+    font-size: 128px;
   }
 }
 
@@ -118,17 +114,16 @@
     margin: auto;
   }
 
-  .text-sm{
-    font-size: 18px ;
+  .text-sm {
+    font-size: 18px;
   }
-  .text-md{
-    font-size: 32px ;
+  .text-md {
+    font-size: 32px;
   }
-  .text-lg{
-    font-size: 48px ;
+  .text-lg {
+    font-size: 48px;
   }
-  .text-xl{
-    font-size: 128px ;
+  .text-xl {
+    font-size: 128px;
   }
-
 }
