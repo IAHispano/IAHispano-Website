@@ -62,3 +62,8 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+::-webkit-scrollbar {
+  width: 0px; /* Ancho de la scrollbar */
+}
+
