@@ -1,8 +1,35 @@
+.text-sm{
+  font-size: 18px ;
+}
+.text-md{
+  font-size: 32px ;
+}
+.text-lg{
+  font-size: 48px ;
+}
+.text-xl{
+  font-size: 38px;
+  line-height: 38px;
+}
+
 /* Small devices (landscape phones, 640px and up) */
 @media (min-width: 640px) {
   .container {
     width: 640px;
     margin: auto;
+  }
+  .text-sm{
+    font-size: 18px ;
+  }
+  .text-md{
+    font-size: 32px ;
+  }
+  .text-lg{
+    font-size: 48px ;
+  }
+  .text-xl{
+    font-size: 74px;
+    line-height: 74px;
   }
 }
 
@@ -12,6 +39,19 @@
     width: 768px;
     margin: auto;
   }
+  .text-sm{
+    font-size: 14px ;
+  }
+  .text-md{
+    font-size: 32px ;
+  }
+  .text-lg{
+    font-size: 40px ;
+  }
+  .text-xl{
+    font-size: 90px;
+    line-height: 90px;
+  }
 }
 
 /* Large devices (desktops, 1024px and up) */
@@ -19,6 +59,19 @@
   .container {
     width: 1024px;
     margin: auto;
+  }
+  .text-sm{
+    font-size: 14px ;
+  }
+  .text-md{
+    font-size: 32px ;
+  }
+  .text-lg{
+    font-size: 40px ;
+  }
+  .text-xl{
+    font-size: 114px;
+    line-height: 114px;
   }
 }
 
@@ -28,6 +81,18 @@
     width: 1280px;
     margin: auto;
   }
+  .text-sm{
+    font-size: 14px ;
+  }
+  .text-md{
+    font-size: 32px ;
+  }
+  .text-lg{
+    font-size: 40px ;
+  }
+  .text-xl{
+    font-size: 128px ;
+  }
 }
 
 /*Extra Extra large devices (large desktops, 1536px and up) */
@@ -36,4 +101,18 @@
     width: 1536px;
     margin: auto;
   }
+
+  .text-sm{
+    font-size: 18px ;
+  }
+  .text-md{
+    font-size: 32px ;
+  }
+  .text-lg{
+    font-size: 48px ;
+  }
+  .text-xl{
+    font-size: 128px ;
+  }
+
 }
