@@ -26,7 +26,7 @@ We value the contributions made by our community of developers. If you would lik
 
 ## 😊 License
 
-Distributed under the MIT License. See [LICENSE.txt](https://github.com/IAHispano/website/blob/main/LICENSE) for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/IAHispano/website/blob/main/LICENSE) for more information.
 
 ## 📧 Contact
 
