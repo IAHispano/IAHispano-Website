@@ -22,7 +22,7 @@ Contributors are encouraged to follow these code rules to maintain the integrity
 
 We value the contributions made by our community of developers. If you would like to see the list of contributors to the IA Hispano website, you can view the graphical representation of contributions using the image below:
 
-[![Contributors](https://contrib.rocks/image?repo=iahispano/web)](https://github.com/IAHispano/web/graphs/contributors)
+[![Contributors](https://contrib.rocks/image?repo=iahispano/website)](https://github.com/IAHispano/web/graphs/contributors)
 
 ## 😊 License
 
