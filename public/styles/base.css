@@ -9,13 +9,52 @@ body {
   min-height: 100vh;
 }
 
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+.flex-center{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.mt-1{
+  margin-top:1rem
+}
+.mt-2{
+  margin-top:2rem
+}
+.mt-3{
+  margin-top:3rem
+}
+.mt-4{
+  margin-top:3.50rem
+}
+.mt-5{
+  margin-top:4rem
+}
+.mb-1{
+  margin-bottom:1rem
+}
+.mb-2{
+  margin-bottom:2rem
+}
+.mb-3{
+  margin-bottom:3rem
+}
+.mb-4{
+  margin-bottom:3.5rem
+}
+.mb-5{
+  margin-bottom:4rem
+}
+
 .row {
   display: flex;
 }
 .col {
   flex: 1;
   margin: 0 1rem;
-  border: 1px solid black;
 }
 
 .main-gradient-text {

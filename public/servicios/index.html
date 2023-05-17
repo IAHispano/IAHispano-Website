@@ -1,43 +1,41 @@
 <!DOCTYPE html>
-<html lang="es-ES">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://iahispano.com/styles/base.css" />
+    <link rel="stylesheet" href="../styles/base.css" />
     <link rel="stylesheet" href="../styles/standard.css" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://iahispano.com/styles/mediaqueries.css"
-    />
-
+    /> -->
+      <link rel="stylesheet" href="../styles/mediaqueries.css">
     <!-- Recomendable descargar e importar localmente -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&&display=swap"
       rel="stylesheet"
     />
-    <script src="../scripts/menuMobile.js"></script>
-    <title>IA Hispano — Servicios</title>
+    <script src="scripts/menuMobile.js"></script>
+    <title>IA Hispano</title>
   </head>
 
   <body class="main-background">
     <!-- Navbar Start -->
     <div class="navbar-container">
       <div class="navbar">
-        <div class="nav-logo text-white bold"><a href="#">IA HISPANO</a></div>
+        <div class="nav-logo text-white bold"><a class="text-lg" href="#">IA HISPANO</a></div>
         <div class="nav-stack">
-          <div class="nav-item"><a href="index.html">Inicio</a></div>
           <div class="nav-item active">
-            <a href="servicios">Nuestros servicios</a>
+            <a class="text-sm" href="index.html">Inicio</a>
           </div>
-          <div class="nav-item"><a href="https://iahispano.com/faq">FAQ</a></div>
-          <div class="nav-item"><a href="https://iahispano.com/videos">Últimos vídeos</a></div>
-          <div class="nav-item"><a href="https://iahispano.com/conversor">Conversor</a></div>
-          <div class="nav-item"><a href="https://iahispano.com/redes">Nuestras redes</a></div>
-          <div class="nav-item"><a href="https://iahispano.com/blog">Blog</a></div>
-          <div class="nav-item"><a href="https://iahispano.com/contacto">Contacto</a></div>
+          <div class="nav-item"><a class="text-sm" href="https://iahispano.com/faq">FAQ</a></div>
+          <div class="nav-item"><a class="text-sm" href="https://iahispano.com/videos">Últimos vídeos</a></div>
+          <div class="nav-item"><a class="text-sm" href="https://iahispano.com/redes">Nuestras redes</a></div>
+          <div class="nav-item"><a class="text-sm" href="https://iahispano.com/blog">Blog</a></div>
+          <div class="nav-item"><a class="text-sm" href="https://iahispano.com/contacto">Contacto</a></div>
         </div>
         <div class="menu-toggle">
           <div class="icon"></div>
@@ -45,13 +43,12 @@
       </div>
       <div class="mobile-menu">
         <div class="mobile-menu-content">
-          <div class="nav-item"><a href="index.html">Inicio</a></div>
-          <div class="nav-item active">
+          <div class="nav-item active"><a href="index.html">Inicio</a></div>
+          <div class="nav-item">
             <a href="servicios">Nuestros servicios</a>
           </div>
           <div class="nav-item"><a href="https://iahispano.com/faq">FAQ</a></div>
           <div class="nav-item"><a href="https://iahispano.com/videos">Últimos vídeos</a></div>
-          <div class="nav-item"><a href="https://iahispano.com/conversor">Conversor</a></div>
           <div class="nav-item"><a href="https://iahispano.com/redes">Nuestras redes</a></div>
           <div class="nav-item"><a href="https://iahispano.com/blog">Blog</a></div>
           <div class="nav-item"><a href="https://iahispano.com/contacto">Contacto</a></div>
@@ -62,12 +59,89 @@
 
     <!-- Content Start -->
     <div class="container">
-      <div class="hero">
-        <div class="hero-content">
-          <div class="hero-text main-gradient-text">Servicios</div>
+      
+      <div class="content">
+          <div class="main-gradient-text title semibold text-center">Nuestros servicios</div>
+          <div class="subtitle text-center text-white text-md">Desde IA Hispano ofrecemos varios servicios de calidad para nuestros usuarios a un precio muy asequible para facilitar la tarea de creación de modelos.</div>
+          <div class="row mt-5 flex-wrap">
+            <div class="col flex-center">
+              <div class="service-box">
+                <div class="service-title">
+                  Dataset + Modelo
+                </div>
+                <div class="service-description">
+                  <ul>
+                    <li>
+                      Creación dataset (100-200 audios)
+                    </li>
+                    <li>Entrenamiento (50k Pasos/500 Epochs)</li>
+                  </ul>
+
+                </div>
+                <div class="button-container text-center">
+                  <a href="https://discord.iahispano.com" class="primary-button text-md"> 35€</a>
+                </div>
+                <div class="service-comment">
+                  Todos los pagos se realizaran mediante PayPal.
+                </div>
+              </div>
+            </div>
+            <div class="col flex-center">
+              <div class="service-box">
+                <div class="service-title">
+                  Modelo
+                </div>
+                <div class="service-description">
+                  <ul>
+                    <li>
+                      Utilizamos tu dataset 
+                    </li>
+                    <li>Entrenamiento (50k Pasos/500 Epochs)</li>
+                  </ul>
+
+                </div>
+                <div class="button-container text-center">
+                  <a href="https://discord.iahispano.com" class="primary-button text-md"> 25€</a>
+                </div>
+                <div class="service-comment">
+                  Todos los pagos se realizaran mediante PayPal.
+                </div>
+              </div>
+            </div>
+            <div class="col flex-center">
+              <div class="service-box">
+                <div class="service-title">
+                  Dataset
+                </div>
+                <div class="service-description">
+                  <ul>
+                    <li>
+                      Creación dataset personalizado (100-200 audios)
+                    </li>
+                  </ul>
+
+                </div>
+                <div class="button-container text-center">
+                  <a href="https://discord.iahispano.com" class="primary-button text-md"> 5€</a>
+                </div>
+                <div class="service-comment">
+                  Todos los pagos se realizaran mediante PayPal.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="service-comment mb-5">
+            Haz click aquí para consultar los términos de compra.
+          </div>
         </div>
-      </div>
+
+      <p class="footer">
+        <span class="star">&#9733;</span>Este sitio es un proyecto de código
+        abierto. ¡Ayúdanos a mejorarlo en
+        <a href="https://github.com/iahispano/website">GitHub</a>!
+      </p>
     </div>
+
     <!-- Content End -->
   </body>
 </html>
