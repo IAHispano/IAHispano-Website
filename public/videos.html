@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./styles/base.css" />
   <link rel="stylesheet" href="./styles/standard.css" />
   <link rel="stylesheet" href="./styles/mediaqueries.css" />
+  <link rel="stylesheet" href="./styles/videos.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,6 +20,112 @@
   <!-- Favicon End -->
   
   <script src="./scripts/menuMobile.js"></script>
+
+  <!--Script videos-->
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script>
+    function loadVideos() {
+      // ID del canal de YouTube
+      var channelId = 'UCv_i_W7tr2yYg7K3fDqgvrQ';
+
+      // Clave de la API de YouTube
+      var apiKey = 'AIzaSyC0nu51mlLWd_fqk_7zVrihmSYBGoCPxjg';
+
+       // Número máximo de videos a mostrar
+  var maxVideos = 30;
+
+// URL de la solicitud para obtener los videos del canal
+var url =
+    'https://www.googleapis.com/youtube/v3/search?order=date&part=snippet&channelId=' +
+    channelId +
+    '&maxResults=' +
+    maxVideos +
+    '&key=' +
+    apiKey;
+
+  // Realizar la solicitud HTTP para obtener los videos del canal
+  fetch(url)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      var container = document.getElementById('video-container');
+      var videoIds = [];
+
+      // Verificar si no hay videos disponibles en el canal
+      if (data.items.length === 0) {
+        var channelUrl = 'https://www.youtube.com/channel/' + channelId;
+
+        var channelWrapper = document.createElement('div');
+        channelWrapper.className = 'channel-wrapper';
+
+        var profileLink = document.createElement('a');
+        profileLink.href = channelUrl;
+        profileLink.target = '_blank';
+
+        var profileImg = document.createElement('img');
+        profileImg.src = 'PATH_TO_PROFILE_IMAGE'; // Reemplaza 'PATH_TO_PROFILE_IMAGE' con la URL de la imagen de perfil del canal
+
+        var titleDiv = document.createElement('div');
+        titleDiv.className = 'channel-title';
+        titleDiv.textContent = 'Nombre del Canal'; // Reemplaza 'Nombre del Canal' con el nombre de tu canal
+
+        profileLink.appendChild(profileImg);
+        channelWrapper.appendChild(titleDiv);
+        channelWrapper.appendChild(profileLink); // Cambia el orden de los elementos para asegurarse de que el enlace envuelva a la imagen
+        container.appendChild(channelWrapper);
+      } else {
+        // Recorre los resultados de los videos y crea un cuadrado para cada uno
+        for (var i = 0; i < data.items.length; i++) {
+          var videoId = data.items[i].id.videoId;
+
+          if (!videoIds.includes(videoId)) {
+            videoIds.push(videoId);
+
+            var videoTitle = data.items[i].snippet.title;
+            var videoThumbnail = data.items[i].snippet.thumbnails.medium.url;
+
+            var videoWrapper = document.createElement('div');
+            videoWrapper.className = 'video-wrapper';
+
+            var thumbnailLink = document.createElement('a');
+            thumbnailLink.href = 'https://www.youtube.com/watch?v=' + videoId;
+            thumbnailLink.target = '_blank';
+
+            var thumbnailImg = document.createElement('img');
+            thumbnailImg.src = videoThumbnail;
+
+            var titleDiv = document.createElement('div');
+            titleDiv.className = 'video-title';
+            titleDiv.textContent = videoTitle;
+
+            thumbnailLink.appendChild(thumbnailImg);
+            videoWrapper.appendChild(thumbnailLink);
+            videoWrapper.appendChild(titleDiv);
+            container.appendChild(videoWrapper);
+          }
+        }
+
+        // Desactivar la selección del último elemento mostrado
+        var lastVideoWrapper = container.lastElementChild;
+        lastVideoWrapper.style.pointerEvents = 'none';
+        lastVideoWrapper.style.cursor = 'default';
+      }
+    })
+    .catch(function (error) {
+      console.error(error);
+    });
+}
+
+// Función para inicializar la API de YouTube
+function onYouTubeIframeAPIReady() {
+  loadVideos();
+}
+
+</script>
+
+
+
   <title>IA Hispano — Vídeos</title>
 </head>
 
@@ -79,6 +186,10 @@
       </div>
     </div>
   </div>
+  <!--div videos en flexbox-->
+  <div id="loading-logo" class="loading-logo"></div>
+  <div id="video-container" class="video-container"></div>
+
   <!-- Content End -->
 
 </body>
