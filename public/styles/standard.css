@@ -156,9 +156,11 @@
   padding: 10px;
   position: fixed;
   bottom: 0;
+  background-color: #000000c0;
   left: 0;
   width: 100%;
 }
+
 
 .star {
   color: gold;

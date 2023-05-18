@@ -42,7 +42,6 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('https://yt3.googleusercontent.com/iAxnDFj_RYww0_RB9T5G3Yv8GIOFpDcJ0NnjZT2pCX6taarg2z4oMcFlAacnqxrbz7_MKG4fYr8=s176-c-k-c0x00ffffff-no-rj'); /* Reemplaza 'ruta_de_la_imagen.png' por la ruta de tu imagen normal */
   opacity: 0.7; /* Ajusta la opacidad de la imagen normal */
   transition: transform 0.2s, opacity 0.2s; /* Agrega transición para la transformación y la opacidad */
   transform: translateX(0); /* Inicialmente la imagen está en la posición original */
