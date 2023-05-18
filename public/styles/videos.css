@@ -57,7 +57,7 @@ body {
 
 .video-wrapper:hover::before {
   opacity: 0; /* Hace que la imagen normal desaparezca completamente al poner el cursor encima */
-  transform: translateX(-10%); /* Mueve la imagen hacia la izquierda al poner el cursor encima */
+  transform: translateX(-100%); /* Mueve la imagen hacia la izquierda al poner el cursor encima */
 }
 
 
