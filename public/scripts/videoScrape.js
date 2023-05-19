@@ -1,57 +1,96 @@
-const channelId = 'UCv_i_W7tr2yYg7K3fDqgvrQ';
-const apiKey = 'AIzaSyB8GVp1CPyIvNp5X_ESpdI4QQhDP9M_Z1Y';
-const maxVideos = 30;
+document.addEventListener('DOMContentLoaded', function() {
+  // Array de URL de los videos de YouTube
+  const videoUrls = [
+    'https://www.youtube.com/watch?v=sD5gGMdUndE',
+    'https://www.youtube.com/watch?v=YkXAFMp6fj0',
+    'https://www.youtube.com/watch?v=ws9CgWTFwg4',
+    'https://www.youtube.com/watch?v=gJcFvGIDeTE',
+    'https://www.youtube.com/watch?v=gJcFvGIDeTE',
+    'https://www.youtube.com/watch?v=gJcFvGIDeTE',
+    'https://www.youtube.com/watch?v=gJcFvGIDeTE',
+    'https://www.youtube.com/watch?v=gJcFvGIDeTE',
+    // Agrega más URL de videos aquí...
+  ];
 
-function decodeHTMLEntities(text) {
-  const parser = new DOMParser();
-  const dom = parser.parseFromString(`<!doctype html><body>${text}`, 'text/html');
-  return dom.body.textContent;
-}
+  function loadVideos() {
+    const container = document.getElementById('video-container');
 
-function loadVideos() {
-  const url = `https://www.googleapis.com/youtube/v3/search?order=date&part=snippet&channelId=${encodeURIComponent(channelId)}&maxResults=${maxVideos}&key=${apiKey}`;
+    videoUrls.forEach(videoUrl => {
+      const videoId = getVideoIdFromUrl(videoUrl);
 
-  fetch(url)
-    .then(response => response.json())
-    .then(data => {
-      const container = document.getElementById('video-container');
-      const videoIdsSet = new Set();
+      // Crear el cuadro del video
+      const videoWrapper = document.createElement('div');
+      videoWrapper.className = 'video-wrapper';
 
-      for (let i = 0; i < data.items.length - 1; i++) {
-        const videoId = data.items[i].id.videoId;
+      // Crear la miniatura del video
+      const thumbnailLink = document.createElement('a');
+      thumbnailLink.href = videoUrl;
+      thumbnailLink.target = '_blank';
 
-        if (!videoIdsSet.has(videoId)) {
-          videoIdsSet.add(videoId);
+      const thumbnailImg = document.createElement('img');
+      thumbnailImg.src = `https://img.youtube.com/vi/${videoId}/mqdefault.jpg`;
+      thumbnailImg.alt = 'Video Thumbnail';
 
-          const videoTitle = decodeHTMLEntities(data.items[i].snippet.title);
-          const videoThumbnail = data.items[i].snippet.thumbnails.medium.url;
+      thumbnailLink.appendChild(thumbnailImg);
+      videoWrapper.appendChild(thumbnailLink);
 
-          const videoWrapper = document.createElement('div');
-          videoWrapper.className = 'video-wrapper';
+      // Obtener el título del video
+      const videoTitle = getVideoTitle(videoUrl);
 
-          const thumbnailLink = document.createElement('a');
-          thumbnailLink.href = `https://www.youtube.com/watch?v=${videoId}`;
-          thumbnailLink.target = '_blank';
+      // Crear el título del video
+      const titleLink = document.createElement('a');
+      titleLink.href = videoUrl;
+      titleLink.target = '_blank';
+      titleLink.textContent = videoTitle;
+      titleLink.className = 'video-title'; // Agrega la clase CSS para dar estilo al título
 
-          const thumbnailImg = document.createElement('img');
-          thumbnailImg.src = videoThumbnail;
+      videoWrapper.appendChild(titleLink);
 
-          const titleDiv = document.createElement('div');
-          titleDiv.className = 'video-title';
-          titleDiv.textContent = videoTitle;
+      // Obtener la descripción del video
+      const videoDescription = getVideoDescription(videoUrl);
 
-          thumbnailLink.appendChild(thumbnailImg);
-          videoWrapper.appendChild(thumbnailLink);
-          videoWrapper.appendChild(titleDiv);
-          container.appendChild(videoWrapper);
-        }
-      }
-    })
-    .catch(error => {
-      console.log(error);
+      // Crear la descripción del video
+      const descriptionPara = document.createElement('p');
+      descriptionPara.textContent = videoDescription;
+      descriptionPara.className = 'video-description'; // Agrega la clase CSS para dar estilo a la descripción
+
+      videoWrapper.appendChild(descriptionPara);
+
+      // Agregar el cuadro del video al contenedor
+      container.appendChild(videoWrapper);
     });
-}
+  }
 
-function onYouTubeIframeAPIReady() {
+  function getVideoIdFromUrl(videoUrl) {
+    const urlParams = new URLSearchParams(new URL(videoUrl).search);
+    return urlParams.get('v');
+  }
+
+  function getVideoTitle(videoUrl) {
+    // Aquí puedes introducir manualmente los títulos de los videos correspondientes
+    const videoTitles = {
+      'https://www.youtube.com/watch?v=sD5gGMdUndE': 'Título del video 1',
+      'https://www.youtube.com/watch?v=YkXAFMp6fj0': 'Título del video 2',
+      'https://www.youtube.com/watch?v=ws9CgWTFwg4': 'Título del video 3',
+      'https://www.youtube.com/watch?v=gJcFvGIDeTE': 'Título del video 4',
+      // Agrega más títulos aquí...
+    };
+
+    return videoTitles[videoUrl] || 'Video no disponible';
+  }
+
+  function getVideoDescription(videoUrl) {
+    // Aquí puedes introducir manualmente las descripciones de los videos correspondientes
+    const videoDescriptions = {
+      'https://www.youtube.com/watch?v=sD5gGMdUndE': 'Descripción del video 1',
+      'https://www.youtube.com/watch?v=YkXAFMp6fj0': 'Descripción del video 2',
+      'https://www.youtube.com/watch?v=ws9CgWTFwg4': 'Descripción del video 3',
+      'https://www.youtube.com/watch?v=gJcFvGIDeTE': 'Descripción del video 4',
+      // Agrega más descripciones aquí...
+    };
+
+    return videoDescriptions[videoUrl] || 'Descripción no disponible';
+  }
+
   loadVideos();
-}
+});

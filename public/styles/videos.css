@@ -72,17 +72,35 @@ body {
   object-fit: cover;
 }
 
+
+.video-wrapper {
+  position: relative;
+}
+
+.title-container {
+  position: relative;
+  margin-top: 200px;
+}
+
 .video-title {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
-  width: 100%;
-  padding: 8px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
-  font-size: 14px;
+  padding: 10px;
+  margin: 0;
   font-weight: bold;
+  z-index: 1;
+  margin-top: 45%;
+  
 }
+
+.video-wrapper img {
+  width: 100%;
+  height: auto;
+}
+
 
 .channel-wrapper {
   display: flex;
