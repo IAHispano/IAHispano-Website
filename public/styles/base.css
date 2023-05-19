@@ -12,11 +12,17 @@ body {
 .flex-wrap {
   flex-wrap: wrap;
 }
+.text-left{
+  text-align: left !important;
+}
 
 .flex-center {
   display: flex;
   justify-content: center;
   margin: auto;
+}
+.flex {
+  display: flex;
 }
 .mt-1 {
   margin-top: 1rem;
