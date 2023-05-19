@@ -184,8 +184,8 @@ a {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   transform-origin: top;
-  width: 100vw; /* Ocupa el ancho completo de la ventana */
-  height: 100vh; /* Ocupa la altura completa de la ventana */
+  width: 100vw; 
+  height: 100vh; 
 }
 
 .mobile-menu-content {
@@ -193,18 +193,58 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%; /* Ocupa la altura completa del menú */
+  height: 100%; 
 }
 
 .close-button {
+  display: flex;
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 50px;
+  right: 50px;
   background: none;
   border: none;
   color: #fff;
   font-size: 16px;
   cursor: pointer;
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  margin: 5px 0;
+  transition: background-color 0.3s ease;
+}
+
+.close-button:before,
+.close-button:after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.close-button:before {
+  transform: translateY(-10px);
+}
+
+.close-button:after {
+  transform: translateY(10px);
+}
+
+.close-button:focus {
+  outline: none;
+}
+
+.mobile-menu-content.active .close-button {
+  background-color: transparent;
+}
+
+.mobile-menu-content.active .close-button:before {
+  transform: translateY(0) rotate(45deg);
+}
+
+.mobile-menu-content.active .close-button:after {
+  transform: translateY(0) rotate(-45deg);
 }
 
 .close-button:focus {
@@ -295,14 +335,6 @@ a {
 
   .nav-stack {
     display: none;
-  }
-
-  .menu-toggle .icon {
-    width: 30px;
-    height: 4px;
-    background-color: #fff;
-    margin: 5px 0;
-    transition: background-color 0.3s ease;
   }
 
   .menu-toggle .icon:before,
