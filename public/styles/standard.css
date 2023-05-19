@@ -47,6 +47,24 @@
   margin: auto 24px;
   text-decoration: none;
 }
+
+.navbar .nav-item a:hover {
+  font-size: 21px; 
+  animation: shine 2s infinite; 
+}
+
+@keyframes shine {
+  0% {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 2);
+  }
+  50% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 4);
+  }
+  100% {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 2);
+  }
+}
+
 .navbar .nav-item.active a {
   position: relative;
   color: #fff;
@@ -259,6 +277,23 @@ a {
   color: #fff;
   text-decoration: none;
   font-size: 20px;
+}
+
+.mobile-menu .nav-item a:hover {
+  font-size: 21px; 
+  animation: shine 2s infinite; 
+}
+
+@keyframes shine {
+  0% {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 2);
+  }
+  50% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 4);
+  }
+  100% {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 2);
+  }
 }
 
 .mobile-menu .nav-item.active a {
