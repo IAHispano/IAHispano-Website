@@ -175,3 +175,13 @@ body {
   }
 
   /* Tags End */
+
+  .click-container{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 15px;
+  color: #fff;
+  justify-content: center;
+  margin-bottom: 20px;
+}
