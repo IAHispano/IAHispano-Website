@@ -2,6 +2,7 @@ body {
   background: linear-gradient(180deg,#000 0,#0e0044 40%,#0e0044 60%,#000 100%);
     color: #fff;
     font-family: "Inter", sans-serif;
+    min-height: 170vh;
     
   }
 
