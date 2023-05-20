@@ -275,7 +275,7 @@ a {
 
 .mobile-menu .nav-item a {
   color: #fff;
-  text-decoration: none;
+  /* text-decoration: none; */
   font-size: 20px;
 }
 
@@ -300,7 +300,7 @@ a {
   font-weight: bold;
   position: relative;
   color: #fff;
-  text-decoration: none;
+  /* text-decoration: none; */
   animation: glowMobile 2.5s;
 }
 
