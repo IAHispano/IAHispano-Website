@@ -23,8 +23,9 @@ body {
   .container {
     max-width: 960px; /* Ancho máximo del contenedor */
     margin: 0 auto; /* Centrar el contenedor en la página */
-    padding: 0 20px; /* Espacio de relleno opcional */
+    padding-bottom: 100px; /* Ajusta el valor según el espacio adicional deseado */
   }
+  
   
   .model-gallery {
     display: grid; /* Cambiar a un sistema de cuadrícula */
@@ -184,4 +185,9 @@ body {
   color: #fff;
   justify-content: center;
   margin-bottom: 20px;
+}
+
+/* Scroll Bar OFF */
+::-webkit-scrollbar {
+  display: none;
 }
