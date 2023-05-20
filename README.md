@@ -2,6 +2,10 @@
 
 Welcome to the official repository of the IA Hispano website. This repository serves as the central hub for the development and maintenance of the IA Hispano website.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/34e01aa8-2101-445b-9044-02b029bf58eb/deploy-status)](https://app.netlify.com/sites/elaborate-sherbet-de79a7/deploys)
+[![first-timers-only Friendly](https://img.shields.io/badge/first--timers--only-friendly-blue.svg)](http://www.firsttimersonly.com/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
 ## 📋 Code Rules
 
 To ensure a smooth development process and maintain code quality, we follow certain code rules and guidelines. These rules help us maintain consistency, readability, and collaboration within the project. Please adhere to the following code rules when contributing to the IA Hispano website:
