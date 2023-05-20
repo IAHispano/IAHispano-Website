@@ -1,0 +1,187 @@
+body {
+  background: linear-gradient(180deg,#000 0,#0e0044 40%,#0e0044 60%,#000 100%);
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    
+  }
+
+  .dark-theme h1 {
+    font-size: 64px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background: -webkit-linear-gradient(0deg,#cb5eee 25%,#4be1ec 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  
+  /* Models */
+ 
+
+  .container {
+    max-width: 960px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor en la página */
+    padding: 0 20px; /* Espacio de relleno opcional */
+  }
+  
+  .model-gallery {
+    display: grid; /* Cambiar a un sistema de cuadrícula */
+    grid-template-columns: repeat(4, 1fr); /* Crear 4 columnas de igual tamaño */
+    justify-items: center; /* Centrar los elementos horizontalmente */
+    justify-content: center; /* Centrar las columnas verticalmente */
+    grid-gap: 20px; /* Espacio entre los elementos */
+    margin-top: 40px;
+    position: relative;
+  }
+  article {
+    position: relative;
+    width: 250px;
+    transition: all .3s ease;
+    padding: 10px;
+    border-radius: 4px;
+    overflow: visible;
+  }
+  
+  article img {
+    height: 400px; /* Establece la altura deseada para las imágenes */
+    width: 100%; /* Asegura que las imágenes ocupen el ancho completo del contenedor */
+    object-fit: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor sin deformarse */
+  }
+  
+  article img:first-child {
+
+    border-radius: 20px;
+    
+  }
+  
+  article:hover img:first-child {
+    filter: blur(10px); /* Aplicamos un filtro de desenfoque a la imagen de fondo al pasar el ratón por encima */
+  }
+  
+  article img:last-child {
+    position: absolute;
+    width: 200px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(25%);
+    transition: .3s ease;
+    opacity: 0;
+  }
+  
+  
+  article:hover {
+    transform:
+      perspective(250px)
+      translateY(-5%)
+      translateZ(0);
+      transition: all .3s ease;
+
+  }
+
+
+  
+  
+  article::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: calc(100% - 400px); /* Ajusta el tamaño para que coincida con la altura de la imagen */
+    width: 256px;
+    background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.7));
+    opacity: 0;
+    border-radius: 4px;
+    overflow: visible;
+    filter: blur(0.8px);
+    transition: all .3s ease;
+    
+  }
+  
+  article:hover::before {
+    opacity: .3;
+  }
+  
+  
+  article:hover img:last-child {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  
+  .image-wrapper {
+    position: relative;
+  }
+
+  /* Models End */
+
+
+  /* Tags */
+
+  .labels {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
+  .label {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 8px;
+    margin: 5px;
+  }
+  
+  .tags-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #fff;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .tags-label {
+    margin-right: 10px;
+  }
+  
+  .tags {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .tag {
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .tag:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+    transition: all .5s ease;
+  }
+  
+  .tag.selected {
+    background: rgba(255, 255, 255, 0.9);
+    color: #000;
+    transition: all .5s ease;
+  }
+
+  /* Tags End */
+
+  .click-container{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 15px;
+  color: #fff;
+  justify-content: center;
+  margin-bottom: 20px;
+}
