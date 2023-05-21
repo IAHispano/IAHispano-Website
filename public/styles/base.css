@@ -1,8 +1,15 @@
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
+}
+
+.row{
+  display: flex;
+}
+.col{
+  flex: 1;
 }
 
 body {
@@ -19,7 +26,6 @@ body {
 .flex-center {
   display: flex;
   justify-content: center;
-  margin: auto;
 }
 .flex {
   display: flex;

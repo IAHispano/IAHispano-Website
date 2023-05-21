@@ -2,140 +2,98 @@
   font-size: 18px;
 }
 .text-md {
-  font-size: 24px;
+  font-size: 32px;
 }
 .text-lg {
   font-size: 32px;
 }
 .text-xl {
-  font-size: 38px;
-  line-height: 38px;
+  font-size: 128px;
+  line-height: 114px;
+}
+
+.button-xl {
+  padding: 20px 160px
 }
 
 /* Small devices (landscape phones, 640px and up) */
-@media (min-width: 640px) {
-  .container {
-    width: 640px;
-    margin: auto;
+
+@media (min-width: 640px) { 
+
+  .container{
+
+      width: 640px;
+
+      margin: auto;
+
   }
-  .text-sm {
-    font-size: 18px;
-  }
-  .text-md {
-    font-size: 24px;
-  }
-  .text-lg {
-    font-size: 48px;
-  }
-  .text-xl {
-    font-size: 74px;
-    line-height: 74px;
-  }
+
 }
-@media (max-width: 640px) {
-  .service-box {
-    margin: 0;
-    margin-top: 30px;
-  }
-}
-@media (max-width: 1024px) {
-  .service-box {
-    margin: 0;
-    margin-top: 30px;
-  }
-  .mobile-column{
-    flex-direction: column;
-  }
-  .blog-image{
-    text-align: center;
-  }
-}
+
+
+
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  .container {
-    width: 768px;
-    margin: auto;
+
+@media (min-width: 768px) { 
+
+  .container{
+
+      width: 768px;
+
+      margin: auto;
+
   }
-  .text-sm {
-    font-size: 14px;
-  }
-  .text-md {
-    font-size: 32px;
-  }
-  .text-lg {
-    font-size: 40px;
-  }
-  .text-xl {
-    font-size: 90px;
-    line-height: 90px;
-  }
-  .menu-toggle {
-    display: none;
-  }
-  .button-xl {
-    padding: 20px 160px;
-  }
+
 }
+
+
+
 
 /* Large devices (desktops, 1024px and up) */
-@media (min-width: 1024px) {
-  .container {
-    width: 1024px;
-    margin: auto;
+
+@media (min-width: 1024px) { 
+
+  .container{
+
+      width: 1024px;
+
+      margin: auto;
+
   }
-  .text-sm {
-    font-size: 14px;
-  }
-  .text-md {
-    font-size: 32px;
-  }
-  .text-lg {
-    font-size: 40px;
-  }
-  .text-xl {
-    font-size: 114px;
-    line-height: 114px;
-  }
+
 }
+
+
+
 
 /* Extra large devices (large desktops, 1280px and up) */
-@media (min-width: 1280px) {
-  .container {
-    width: 1280px;
-    margin: auto;
+
+@media (min-width: 1280px) { 
+
+  .container{
+
+      width: 1280px;
+
+      margin: auto;
+
   }
-  .text-sm {
-    font-size: 14px;
-  }
-  .text-md {
-    font-size: 32px;
-  }
-  .text-lg {
-    font-size: 40px;
-  }
-  .text-xl {
-    font-size: 128px;
-  }
+
 }
 
+
+
+
 /*Extra Extra large devices (large desktops, 1536px and up) */
-@media (min-width: 1536px) {
-  .container {
-    width: 1536px;
-    margin: auto;
+
+@media (min-width: 1536px) { 
+
+  .container{
+
+      width: 1536px;
+
+      margin: auto;
+
   }
 
-  .text-sm {
-    font-size: 18px;
-  }
-  .text-md {
-    font-size: 32px;
-  }
-  .text-lg {
-    font-size: 48px;
-  }
-  .text-xl {
-    font-size: 128px;
-  }
 }
