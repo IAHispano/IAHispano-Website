@@ -8,8 +8,8 @@
   font-size: 32px;
 }
 .text-xl {
-  font-size: 38px;
-  line-height: 38px;
+  font-size: 48px;
+  line-height: 55px;
 }
 
 /* Small devices (landscape phones, 640px and up) */
@@ -28,7 +28,7 @@
     font-size: 48px;
   }
   .text-xl {
-    font-size: 74px;
+    font-size: 104px;
     line-height: 74px;
   }
 }
@@ -42,7 +42,7 @@
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .container {
-    width: 768px;
+    width: 868px;
     margin: auto;
   }
   .text-sm {
@@ -55,7 +55,7 @@
     font-size: 40px;
   }
   .text-xl {
-    font-size: 90px;
+    font-size: 100px;
     line-height: 90px;
   }
   .menu-toggle {

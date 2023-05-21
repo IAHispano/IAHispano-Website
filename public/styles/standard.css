@@ -119,7 +119,7 @@
   text-decoration: none;
   display: inline-block;
   margin: auto;
-  border-radius: 36px;
+  border-radius: 46px;
 }
 .primary-button:active {
   background: none;
@@ -154,14 +154,14 @@
 }
 
 .hero-text {
-  font-size: 128px;
+  font-size: 150px;
   line-height: 128px;
   text-align: center;
   color: #fff;
   font-weight: 700;
 }
 .hero-button {
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 .footer {
@@ -288,9 +288,9 @@ a {
     display: block;
     cursor: pointer;
     position: fixed;
-    top: 48px;
+    top: 47px;
     right: 20px;
-    margin-left: auto;
+
   }
 
   .menu-toggle .icon {
@@ -314,13 +314,6 @@ a {
     display: none;
   }
 
-  .menu-toggle .icon {
-    width: 30px;
-    height: 4px;
-    background-color: #fff;
-    margin: 5px 0;
-    transition: background-color 0.3s ease;
-  }
 
   .menu-toggle .icon:before,
   .menu-toggle .icon:after {
@@ -408,7 +401,7 @@ a {
 .service-box .primary-button {
   display: block;
   margin: 10px 40px;
-  margin-top: 80px;
+  margin-top: 40px;
   padding: 20px 0;
   border-radius: 25px;
   font-weight: 700;
