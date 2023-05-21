@@ -62,7 +62,7 @@
     display: none;
   }
   .button-xl {
-    padding: 20px 160px;
+    padding: 10px 80px;
   }
 }
 
@@ -97,13 +97,13 @@
     font-size: 14px;
   }
   .text-md {
-    font-size: 32px;
+    font-size: 25px;
   }
   .text-lg {
     font-size: 40px;
   }
   .text-xl {
-    font-size: 128px;
+    font-size: 110px;
   }
 }
 
@@ -118,12 +118,12 @@
     font-size: 18px;
   }
   .text-md {
-    font-size: 32px;
+    font-size: 25px;
   }
   .text-lg {
     font-size: 48px;
   }
   .text-xl {
-    font-size: 128px;
+    font-size: 110px;
   }
 }

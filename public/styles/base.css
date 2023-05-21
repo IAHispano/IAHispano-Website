@@ -1,14 +1,14 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
-.row{
+.row {
   display: flex;
 }
-.col{
+.col {
   flex: 1;
 }
 
@@ -19,7 +19,7 @@ body {
 .flex-wrap {
   flex-wrap: wrap;
 }
-.text-left{
+.text-left {
   text-align: left !important;
 }
 
@@ -78,5 +78,3 @@ body {
 ::-webkit-scrollbar {
   width: 0px; /* Ancho de la scrollbar */
 }
-
-
