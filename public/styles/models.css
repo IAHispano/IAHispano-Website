@@ -176,14 +176,142 @@ article:hover img:last-child {
 .click-container {
   display: flex;
   align-items: center;
-  margin-top: 20px;
   font-size: 15px;
   color: #fff;
   justify-content: center;
-  margin-bottom: 20px;
+  margin: auto;
 }
 
 /* Scroll Bar OFF */
 ::-webkit-scrollbar {
   display: none;
 }
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 767px) {
+  /* Ajustes de la barra de navegación en dispositivos móviles */
+  .navbar {
+    flex-direction: column;
+  }
+
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .mobile-menu-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-menu-content a {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  /* Ajustes para la sección de modelos */
+  main {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .tags-container {
+    margin-bottom: 10px;
+  }
+
+  .tags-label {
+    font-size: 16px;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+  }
+
+  .tag {
+    font-size: 14px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+  }
+
+  .model-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+ /* Media Queries */
+
+@media screen and (max-width: 768px) {
+  .model-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+  }
+  .click-image {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .model-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 5px;
+  }
+  .click-image {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .click-image {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+  /* Ajustes adicionales según sea necesario */
+  
+}
+
+  /* Tags Transition */
+  .fade-in {
+    animation: fade-in 1s;
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .fade-out {
+    animation: fade-out 1s;
+  }
+  
+  @keyframes fade-out {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
