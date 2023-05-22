@@ -35,10 +35,16 @@ function filterImages(tag) {
 
   var articles = document.querySelectorAll(".model-gallery article");
 
+// Oculta todos los modelos aplicando la clase 'fade-out'
+articles.forEach(function (article) {
+  article.classList.add("fade-out");
+});
+
+// Espera 300ms (duración de la transición) antes de mostrar los modelos filtrados
+setTimeout(function () {
+  // Muestra los modelos filtrados quitando la clase 'fade-out'
   articles.forEach(function (article) {
     var labels = article.querySelectorAll(".label");
-    var image = article.querySelector("img");
-
     var hasTag = false;
 
     labels.forEach(function (label) {
@@ -48,11 +54,16 @@ function filterImages(tag) {
     });
 
     if (hasTag) {
+      // Aplica la animación de fade-in al mostrar los modelos
       article.style.display = "block";
+      article.classList.remove("fade-out");
+      article.classList.add("fade-in");
     } else {
       article.style.display = "none";
     }
   });
+}, 500);
+
 }
 
 // Audio
