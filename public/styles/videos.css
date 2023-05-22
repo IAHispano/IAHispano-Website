@@ -65,7 +65,7 @@ body {
 
 .video-wrapper:hover {
   transform: scale(
-    1.2
+    1.1
   ); /* Aumenta el tamaño del cuadro al poner el cursor encima */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
