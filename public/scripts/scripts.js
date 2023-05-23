@@ -6,3 +6,4 @@ function showFaq(element){
     // }
     element.getElementsByClassName("faq-answer")[0].classList.toggle("faq-show");
 }
+
