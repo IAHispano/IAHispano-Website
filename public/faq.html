@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&&display=swap" rel="stylesheet" />
-
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   <!-- Favicon Start -->
   <link rel="icon" href="img\favicon.png" type="image/x-icon">
   <link rel="shortcut icon" href="img\favicon.png" type="image/x-icon">
@@ -68,7 +68,7 @@
         FAQ
       </div>
       <div class="subtitle text-center text-white text-md">
-        Visita nuestra sección de preguntas frecuentes si tienes cualquier duda sobre el funcionamiento de la inteligencia artificial o relacionado. 
+       En nuestra sección de preguntas frecuentes podrás encontrar la respuesta a muchas preguntas sobre el servidor o sobre la inteligencia artificial.
       </div>
       
       <div class="faq-container mt-5">
@@ -76,35 +76,100 @@
           <div class="col">
             <div class="faq-item" onclick="showFaq(this)">
               <div class="faq-question text-md bold text-white">
-                <div class="question-text">¿Los entrenamientos de modelos son gratis?</div>
-                <div class="faq-icon"><span class="chevron-icon">+</span></div>
+                <div class="question-text">¿Cómo funciona todo el tema de servicios?</div>
+                <span class="material-symbols-outlined">
+                  expand_more
+                  </span>
               </div>
-              <div class="faq-answer text-white text-sm">No, hay distintos planes los cuales puedes consultar en nuestro Discord. </div>
+              <div class="faq-answer text-white text-sm">El primer paso será que hagas un ticket en nuestro servidor de Discord. En el ticket se iniciará una conversación privada con los administradores del servidor y ahí podrás especificarnos qué es lo que necesitas para poder buscar un plan que se adapte a tus necesidades. ¡No tengas miedo en consultarnos!</div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col">
-            <div class="faq-item" onclick="showFaq(this)">
-              <div class="faq-question text-md bold text-white">
-                <div class="question-text">¿Puedo enviar mi propio modelo?</div>
-                <div class="faq-icon"><span class="chevron-icon">+</span></div>
+        
+          <div class="row">
+            <div class="col">
+              <div class="faq-item" onclick="showFaq(this)">
+                <div class="faq-question text-md bold text-white">
+                  <div class="question-text">¿Los modelos son gratuitos?</div>
+                  <span class="material-symbols-outlined">
+                    expand_more
+                    </span>
+                </div>
+                <div class="faq-answer text-white text-sm">En nuestro apartado de modelos podrás encontrar infinidad de modelos públicos totalmente gratuitos, pero si quieres un modelo creado a medida para ti siempre puedes optar por la opción de pago que son nuestros servicios.</div>
               </div>
-              <div class="faq-answer text-white text-sm">Sí, hay un canal específico para eso.</div>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <div class="faq-item" onclick="showFaq(this)">
-              <div class="faq-question text-md bold text-white">
-                <div class="question-text">¿Puedo hacer self promo?</div>
-                <div class="faq-icon"><span class="chevron-icon">+</span></div>
+
+          <div class="row">
+            <div class="col">
+              <div class="faq-item" onclick="showFaq(this)">
+                <div class="faq-question text-md bold text-white">
+                  <div class="question-text">¿En cuánto tiempo podría tener mi modelo de servicios?</div>
+                  <span class="material-symbols-outlined">
+                    expand_more
+                    </span>
+                </div>
+                <div class="faq-answer text-white text-sm">Los tiempos de entrega siempre dependerán de la demanda que haya en ese momento pero intentamos que sean de 24-48 horas desde que recibimos el pago.</div>
               </div>
-              <div class="faq-answer text-white text-sm">Sí, en el canal de #promociónate cada hora.</div>
             </div>
           </div>
-        </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="faq-item" onclick="showFaq(this)">
+                <div class="faq-question text-md bold text-white">
+                  <div class="question-text">¿Qué es un dataset?</div>
+                  <span class="material-symbols-outlined">
+                    expand_more
+                    </span>
+                </div>
+                <div class="faq-answer text-white text-sm">Un dataset es un conjunto de audios a capela (es decir, sin la instrumental de la canción) de una persona que se utiliza para poder entrenar los modelos y que la inteligencia artificial aprenda de esos audios para clonar la voz.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="faq-item" onclick="showFaq(this)">
+                <div class="faq-question text-md bold text-white">
+                  <div class="question-text">¿Qué son los Epochs/Steps?</div>
+                  <span class="material-symbols-outlined">
+                    expand_more
+                    </span>
+                </div>
+                <div class="faq-answer text-white text-sm">Los Epochs/Steps es la forma en la que la inteligencia artificial expresa la cantidad de tiempo que ha entrenado. En RVC, se expresa en Epochs donde el máximo son 1000, y a partir de unos 500 Epochs ya empieza a sonar bien. Por otro lado, en SVC esto se expresa en Steps donde a partir de los 10000 Steps ya empieza a sonar bien y entre los 50000-100000 ya suena casi perfecto.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="faq-item" onclick="showFaq(this)">
+                <div class="faq-question text-md bold text-white">
+                  <div class="question-text">¿Cuál es la diferencia entre RVC y SVC?</div>
+                  <span class="material-symbols-outlined">
+                    expand_more
+                    </span>
+                </div>
+                <div class="faq-answer text-white text-sm">Tanto RVC como SVC son tecnologías de inteligencia artificial aplicadas a la clonación de voces que nosotros damos soporte en nuestro servidor, actualmente recomendamos usar RVC porque es más rápida y da mejores resultados.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="faq-item" onclick="showFaq(this)">
+                <div class="faq-question text-md bold text-white">
+                  <div class="question-text">¿Puedo utilizar un modelo de RVC en SVC o viceversa?</div>
+                  <span class="material-symbols-outlined">
+                    expand_more
+                    </span>
+                </div>
+                <div class="faq-answer text-white text-sm">No. Los modelos de cada tecnología están limitados a ser utilizados en dicha tecnología y no pueden ser usadas en la otra.</div>
+              </div>
+            </div>
+          </div>
+
       </div>
     </div>
   </div>
