@@ -139,20 +139,7 @@
               </div>
             </div>
           </div>
-
-          <div class="row">
-            <div class="col">
-              <div class="faq-item" onclick="showFaq(this)">
-                <div class="faq-question text-md bold text-white">
-                  <div class="question-text">¿Qué son los Epochs/Steps?</div>
-                  <span class="material-symbols-outlined">
-                    expand_more
-                    </span>
-                </div>
-                <div class="faq-answer text-white text-sm">Los Epochs/Steps es la forma en la que la inteligencia artificial expresa la cantidad de tiempo que ha entrenado. En RVC, se expresa en Epochs donde el máximo son 1000, y a partir de unos 500 Epochs ya empieza a sonar bien. Por otro lado, en SVC esto se expresa en Steps donde a partir de los 10000 Steps ya empieza a sonar bien y entre los 50000-100000 ya suena casi perfecto.</div>
-              </div>
-            </div>
-          </div>
+          
 
           <div class="row">
             <div class="col">
@@ -181,6 +168,96 @@
               </div>
             </div>
           </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="faq-item" onclick="showFaq(this)">
+                <div class="faq-question text-md bold text-white">
+                  <div class="question-text">¿Puedo reentrenar mi modelo? (RVC)</div>
+                  <span class="material-symbols-outlined">
+                    expand_more
+                    </span>
+                </div>
+                <div class="faq-answer text-white text-sm">Sí, puedes hacerlo mientras conserves los archivos G*{}.pth y G*{}.pth del modelo.
+                  Debe scargar el modelo, el dataset y realizar exactamente el mismo proceso que cuando entrenó, el programa detectará los Epochs anteriores y empezará desde ahí.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="faq-item" onclick="showFaq(this)">
+                <div class="faq-question text-md bold text-white">
+                  <div class="question-text">¿Qué son los Epochs? (RVC)</div>
+                  <span class="material-symbols-outlined">
+                    expand_more
+                    </span>
+                </div>
+                <div class="faq-answer text-white text-sm">Un epoch es la cantidad de iteraciones que se realizan en el entrenamiento para completar un ciclo completo de tu dataset.
+                  Por ejemplo, si tienes un dataset de 200 audios, y asignas un batch_size de 10, se procesarán 10 audios a la vez en cada iteración, para completar los 200 audios se tendrán que hacer 20 iteraciones en total, ese ciclo completo es un epoch.
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="faq-item" onclick="showFaq(this)">
+                <div class="faq-question text-md bold text-white">
+                  <div class="question-text">¿Qué hago si no se generó el archivo added*{}.index? (RVC)</div>
+                  <span class="material-symbols-outlined">
+                    expand_more
+                    </span>
+                </div>
+                <div class="faq-answer text-white text-sm">Ejecuta la interfaz de gradio con el modelo cargado y da click sobre "train feature index" y espera a que en el panel derecho te muestre el mensaje added_{}.index </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="faq-item" onclick="showFaq(this)">
+                <div class="faq-question text-md bold text-white">
+                  <div class="question-text">¿Para qué sirve el archivo index? (RVC)</div>
+                  <span class="material-symbols-outlined">
+                    expand_more
+                    </span>
+                </div>
+                <div class="faq-answer text-white text-sm">Este archivo permite realizar la búsqueda de características en la voz del modelo entrenado con mayor rapidez para poder aplicarlas en su a capela.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="faq-item" onclick="showFaq(this)">
+                <div class="faq-question text-md bold text-white">
+                  <div class="question-text">¿Para qué sirve el strength en la inferencia? (RVC)</div>
+                  <span class="material-symbols-outlined">
+                    expand_more
+                    </span>
+                </div>
+                <div class="faq-answer text-white text-sm">Se refiere a la cantidad de parecido que desea que tenga su a capela con la voz del modelo entrenado.
+                  Con un valor muy bajo apenas notará el cambio con respecto a la voz original.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="faq-item" onclick="showFaq(this)">
+                <div class="faq-question text-md bold text-white">
+                  <div class="question-text">¿Para qué sirve el pitch en la inferencia? (RVC)</div>
+                  <span class="material-symbols-outlined">
+                    expand_more
+                    </span>
+                </div>
+                <div class="faq-answer text-white text-sm">Permite obtener una voz o más aguda, puede usarlo si tiene una voz femenina que se escucha demasiado masculina, simplemente introduce un número mayor al 0 que aparece por defecto, lo mismo en caso contrario, un valor negativo si quieres una voz más grave. Abusar de la cantidad le dará una voz robotica.</div>
+              </div>
+            </div>
+          </div>
+
+          
 
       </div>
     </div>
