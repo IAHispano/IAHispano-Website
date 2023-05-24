@@ -62,7 +62,7 @@
   position: relative;
   color: #fff;
   text-decoration: none;
-  transition: .3s ease;
+  transition: 0.3s ease;
   animation: glow 2.5s;
 }
 @keyframes glow {
@@ -74,7 +74,7 @@
   }
 }
 .navbar .nav-item.active a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -5px;
   left: 0;
@@ -175,7 +175,6 @@
   width: 100%;
 }
 
-
 .star {
   color: gold;
   margin-right: 5px;
@@ -253,7 +252,7 @@ a {
 }
 
 .mobile-menu .nav-item.active a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -5px;
   left: 0;
@@ -290,7 +289,6 @@ a {
     position: fixed;
     top: 47px;
     right: 20px;
-
   }
 
   .menu-toggle .icon {
@@ -313,7 +311,6 @@ a {
   .nav-stack {
     display: none;
   }
-
 
   .menu-toggle .icon:before,
   .menu-toggle .icon:after {
@@ -446,22 +443,22 @@ a {
   border-radius: 24px;
 }
 
-.blog-box .blog-image img{
+.blog-box .blog-image img {
   width: 180px;
   border-radius: 36px;
 }
-.blog-box .blog-image{
+.blog-box .blog-image {
   margin: auto 10px;
 }
 
-.blog-box .blog-info{
+.blog-box .blog-info {
   text-align: left;
 }
-.blog-box .blog-content{
+.blog-box .blog-content {
   margin: 10px;
 }
-.blog-box .blog-description{
-  margin: 20px auto
+.blog-box .blog-description {
+  margin: 20px auto;
 }
 .main-blog-image {
   overflow: hidden;
@@ -469,11 +466,11 @@ a {
   max-height: 325px;
 }
 
-.blog-author{
+.blog-author {
   margin: 10px auto;
 }
 
-.post-content{
+.post-content {
   margin: 20px;
 }
 
@@ -482,15 +479,15 @@ a {
     margin: 0;
     margin-top: 30px;
   }
-  .mobile-column{
+  .mobile-column {
     flex-direction: column;
   }
-  .blog-image{
+  .blog-image {
     text-align: center;
   }
 }
 
-.faq-item{
+.faq-item {
   background: #040518;
   border-bottom-style: none;
   border-radius: 32px;
@@ -500,24 +497,24 @@ a {
   overflow: hidden;
   transition: max-height 0.5s ease;
 }
-.faq-question{
+.faq-question {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 16px;
   display: flex;
 }
 
-.faq-answer{
+.faq-answer {
   padding-right: 32px;
   display: none;
   overflow: hidden;
   transition: max-height 0.3s ease;
 }
-.faq-show{
-  display: block
+.faq-show {
+  display: block;
 }
 
-.faq-icon{
+.faq-icon {
   width: 40px;
   height: 40px;
   border: 2px solid #fff;
@@ -530,11 +527,7 @@ a {
 }
 
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }
 .primary-button:hover {
   background-color: #fff;
@@ -560,4 +553,3 @@ a {
 .animated.fade-in {
   animation-name: fade-in;
 }
-

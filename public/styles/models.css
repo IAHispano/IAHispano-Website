@@ -249,69 +249,67 @@ article:hover img:last-child {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
- /* Media Queries */
+  /* Media Queries */
 
-@media screen and (max-width: 768px) {
-  .model-gallery {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 10px;
+  @media screen and (max-width: 768px) {
+    .model-gallery {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 10px;
+    }
+    .click-image {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
-  .click-image {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
 
-@media screen and (max-width: 480px) {
-  .model-gallery {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 5px;
+  @media screen and (max-width: 480px) {
+    .model-gallery {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 5px;
+    }
+    .click-image {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
-  .click-image {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  @media screen and (max-width: 768px) {
+    .click-image {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
-}
-@media screen and (max-width: 768px) {
-  .click-image {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
 
   /* Ajustes adicionales según sea necesario */
-  
 }
 
-  /* Tags Transition */
-  .fade-in {
-    animation: fade-in 1s;
+/* Tags Transition */
+.fade-in {
+  animation: fade-in 1s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
   }
-  
-  @keyframes fade-in {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+  to {
+    opacity: 1;
   }
-  .fade-out {
-    animation: fade-out 1s;
+}
+.fade-out {
+  animation: fade-out 1s;
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
   }
-  
-  @keyframes fade-out {
-    from {
-      opacity: 1;
-    }
-    to {
-      opacity: 0;
-    }
+  to {
+    opacity: 0;
   }
-  
+}

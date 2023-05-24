@@ -35,35 +35,34 @@ function filterImages(tag) {
 
   var articles = document.querySelectorAll(".model-gallery article");
 
-// Oculta todos los modelos aplicando la clase 'fade-out'
-articles.forEach(function (article) {
-  article.classList.add("fade-out");
-});
-
-// Espera 300ms (duración de la transición) antes de mostrar los modelos filtrados
-setTimeout(function () {
-  // Muestra los modelos filtrados quitando la clase 'fade-out'
+  // Oculta todos los modelos aplicando la clase 'fade-out'
   articles.forEach(function (article) {
-    var labels = article.querySelectorAll(".label");
-    var hasTag = false;
+    article.classList.add("fade-out");
+  });
 
-    labels.forEach(function (label) {
-      if (label.innerText === tag || tag === "") {
-        hasTag = true;
+  // Espera 300ms (duración de la transición) antes de mostrar los modelos filtrados
+  setTimeout(function () {
+    // Muestra los modelos filtrados quitando la clase 'fade-out'
+    articles.forEach(function (article) {
+      var labels = article.querySelectorAll(".label");
+      var hasTag = false;
+
+      labels.forEach(function (label) {
+        if (label.innerText === tag || tag === "") {
+          hasTag = true;
+        }
+      });
+
+      if (hasTag) {
+        // Aplica la animación de fade-in al mostrar los modelos
+        article.style.display = "block";
+        article.classList.remove("fade-out");
+        article.classList.add("fade-in");
+      } else {
+        article.style.display = "none";
       }
     });
-
-    if (hasTag) {
-      // Aplica la animación de fade-in al mostrar los modelos
-      article.style.display = "block";
-      article.classList.remove("fade-out");
-      article.classList.add("fade-in");
-    } else {
-      article.style.display = "none";
-    }
-  });
-}, 500);
-
+  }, 500);
 }
 
 // Audio
