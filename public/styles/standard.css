@@ -504,6 +504,15 @@ a {
   display: flex;
 }
 
+.link {
+  text-decoration: none;
+  color: #5865F2;
+}
+
+.link#tutorial {
+  color: #ED4245;
+}
+
 .faq-answer {
   padding-right: 32px;
   display: none;

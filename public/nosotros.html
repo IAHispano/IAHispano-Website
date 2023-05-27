@@ -1,163 +1,199 @@
 <!DOCTYPE html>
 <html lang="es-ES">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/standard.css" />
+    <link rel="stylesheet" href="./styles/contact.css" />
+    <link rel="stylesheet" href="./styles/mediaqueries.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./styles/base.css" />
-  <link rel="stylesheet" href="./styles/standard.css" />
-  <link rel="stylesheet" href="./styles/contact.css" />
-  <link rel="stylesheet" href="./styles/mediaqueries.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Tags Start -->
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="IA Hispano" />
+    <meta
+      name="description"
+      content="La comunidad hispanohablante líder en Inteligencia Artificial aplicada a la música. Descubre las últimas tendencias, avances y proyectos relacionados con la IA y la música."
+    />
+    <meta property="og:site_name" content="IA Hispano" />
+    <meta property="og:title" content="IA Hispano" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="La comunidad hispanohablante líder en Inteligencia Artificial aplicada a la música. Descubre las últimas tendencias, avances y proyectos relacionados con la IA y la música."
+    />
+    <meta property="og:image" content="./img/favicon.png" />
+    <meta content="#150d27" name="theme-color" />
+    <meta content="#150d27" name="msapplication-navbutton-color" />
+    <meta property="og:url" content="https://iahispano.com" />
+    <link rel="canonical" href="https://iahispano.com" />
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <!-- Tags End -->
 
-  <!-- Tags Start -->
-  <link rel="icon" type="image/x-icon" href="./img/favicon.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="author" content="IA Hispano" />
-  <meta name="description"
-    content="La comunidad hispanohablante líder en Inteligencia Artificial aplicada a la música. Descubre las últimas tendencias, avances y proyectos relacionados con la IA y la música." />
-  <meta property="og:site_name" content="IA Hispano" />
-  <meta property="og:title" content="IA Hispano" />
-  <meta property="og:type" content="website" />
-  <meta property="og:description"
-    content="La comunidad hispanohablante líder en Inteligencia Artificial aplicada a la música. Descubre las últimas tendencias, avances y proyectos relacionados con la IA y la música." />
-  <meta property="og:image" content="./img/favicon.png" />
-  <meta content="#150d27" name="theme-color" />
-  <meta content="#150d27" name="msapplication-navbutton-color" />
-  <meta property="og:url" content="https://iahispano.com" />
-  <link rel="canonical" href="https://iahispano.com" />
-  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
-  <!-- Tags End -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./scripts/menuMobile.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2069a59bd0.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>IA Hispano — Sobre nosotros</title>
+  </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&&display=swap" rel="stylesheet" />
-  <script src="./scripts/menuMobile.js"></script>
-  <script src="https://kit.fontawesome.com/2069a59bd0.js" crossorigin="anonymous"></script>
-  <title>IA Hispano — Sobre nosotros</title>
-</head>
+  <body class="main-background">
+    <!-- Navbar Start -->
+    <div class="navbar-container">
+      <div class="navbar">
+        <div class="nav-logo text-white bold">
+          <a href="index.html">IA HISPANO</a>
+        </div>
+        <div class="nav-stack">
+          <div class="nav-item"><a href="servicios.html">Servicios</a></div>
+          <div class="nav-item"><a href="faq.html">FAQ</a></div>
+          <div class="nav-item"><a href="videos.html">Vídeos</a></div>
+          <div class="nav-item"><a href="modelos.html">Modelos</a></div>
+          <div class="nav-item"><a href="enlaces.html">Enlaces</a></div>
+          <div class="nav-item"><a href="blog.html">Blog</a></div>
+          <div class="nav-item active">
+            <a href="nosotros.html">Sobre nosotros</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<body class="main-background">
-  <!-- Navbar Start -->
-  <div class="navbar-container">
-    <div class="navbar">
-      <div class="nav-logo text-white bold"><a href="index.html">IA HISPANO</a></div>
-      <div class="nav-stack">
+    <!-- Mobile Navbar -->
+
+    <div class="menu-toggle">
+      <div class="icon"></div>
+    </div>
+    <div class="mobile-menu">
+      <div class="mobile-menu-content">
         <div class="nav-item"><a href="servicios.html">Servicios</a></div>
         <div class="nav-item"><a href="faq.html">FAQ</a></div>
         <div class="nav-item"><a href="videos.html">Vídeos</a></div>
         <div class="nav-item"><a href="modelos.html">Modelos</a></div>
         <div class="nav-item"><a href="enlaces.html">Enlaces</a></div>
         <div class="nav-item"><a href="blog.html">Blog</a></div>
-        <div class="nav-item active"><a href="nosotros.html">Sobre nosotros</a></div>
+        <div class="nav-item active">
+          <a href="nosotros.html">Sobre nosotros</a>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Mobile Navbar -->
+    <!-- Navbar End -->
 
-  <div class="menu-toggle">
-    <div class="icon"></div>
-  </div>
-  </div>
-  <div class="mobile-menu">
-    <div class="mobile-menu-content">
-      <div class="nav-item"><a href="servicios.html">Servicios</a></div>
-      <div class="nav-item"><a href="faq.html">FAQ</a></div>
-      <div class="nav-item"><a href="videos.html">Vídeos</a></div>
-      <div class="nav-item"><a href="modelos.html">Modelos</a></div>
-      <div class="nav-item"><a href="enlaces.html">Enlaces</a></div>
-      <div class="nav-item"><a href="blog.html">Blog</a></div>
-      <div class="nav-item active"><a href="nosotros.html">Sobre nosotros</a></div>
-    </div>
-  </div>
-  </div>
-
-  <!-- Navbar End -->
-
-
-  <!-- Content Start -->
-  <div class="container">
-    <div class="content">
-      <div class="row flex-wrap">
-        <div class="col flex-center">
-          <div id="redes" class="redes-sociales">
-            <div class="main-gradient-text title semibold text-center">
-              Sobre nosotros
-            </div>
-            <div class="swiper-wrapper">
-              <div class="row">
-                <div class="swiper-slide">
-                  <div class="slide">
-                    <div class="menu-item item-tiktok">
-                      <a href="https://www.tiktok.com/@ia_hispano" target="_blank">
-                        <i class="fa-brands fa-tiktok"></i>
-                      </a>
+    <!-- Content Start -->
+    <div class="container">
+      <div class="content">
+        <div class="row flex-wrap">
+          <div class="col flex-center">
+            <div id="redes" class="redes-sociales">
+              <div class="main-gradient-text title semibold text-center">
+                Sobre nosotros
+              </div>
+              <div class="swiper-wrapper">
+                <div class="row">
+                  <div class="swiper-slide">
+                    <div class="slide">
+                      <div class="menu-item item-tiktok">
+                        <a
+                          href="https://www.tiktok.com/@ia_hispano"
+                          target="_blank"
+                        >
+                          <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                      </div>
+                      <div class="intro">
+                        <h1>TikTok</h1>
+                        <p>
+                          ¡Somos una comunidad de gente apasionada por la IA
+                          donde nos ayudamos y creamos juntos nuevos proyectos!
+                          ✨
+                        </p>
+                      </div>
                     </div>
-                    <div class="intro">
-                      <h1>TikTok</h1>
-                      <p>¡Somos una comunidad de gente apasionada por la IA
-                        donde nos ayudamos y creamos juntos nuevos proyectos! ✨</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide">
+                      <div class="menu-item item-instagram">
+                        <a
+                          href="https://www.instagram.com/iahispano/"
+                          target="_blank"
+                        >
+                          <i class="fa-brands fa-instagram"></i>
+                        </a>
+                      </div>
+                      <div class="intro">
+                        <h1>Instagram</h1>
+                        <p>
+                          ¡Somos una comunidad de gente apasionada por la IA
+                          donde nos ayudamos y creamos juntos nuevos proyectos!
+                          ✨
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide">
-                  <div class="slide">
-                    <div class="menu-item item-instagram">
-                      <a href="https://www.instagram.com/iahispano/" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                      </a>
+                <div class="row">
+                  <div class="swiper-slide">
+                    <div class="slide">
+                      <div class="menu-item item-twitter">
+                        <a href="https://twitter.com/IAHispano" target="_blank">
+                          <i class="fa-brands fa-twitter"></i>
+                        </a>
+                      </div>
+                      <div class="intro">
+                        <h1>Twitter</h1>
+                        <p>
+                          ¡Somos una comunidad de gente apasionada por la IA
+                          donde nos ayudamos y creamos juntos nuevos proyectos!
+                          ✨
+                        </p>
+                      </div>
                     </div>
-                    <div class="intro">
-                      <h1>Instagram</h1>
-                      <p>¡Somos una comunidad de gente apasionada por la IA
-                        donde nos ayudamos y creamos juntos nuevos proyectos! ✨</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide">
+                      <div class="menu-item item-youtube">
+                        <a
+                          href="https://www.youtube.com/@IAHispano"
+                          target="_blank"
+                        >
+                          <i class="fa-brands fa-youtube"></i>
+                        </a>
+                      </div>
+                      <div class="intro">
+                        <h1>Youtube</h1>
+                        <p>
+                          ¡Somos una comunidad de gente apasionada por la IA
+                          donde nos ayudamos y creamos juntos nuevos proyectos!
+                          ✨
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="row">
-                <div class="swiper-slide">
-                  <div class="slide">
-                    <div class="menu-item item-twitter">
-                      <a href="https://twitter.com/IAHispano" target="_blank">
-                        <i class="fa-brands fa-twitter"></i>
-                      </a>
-                    </div>
-                    <div class="intro">
-                      <h1>Twitter</h1>
-                      <p>¡Somos una comunidad de gente apasionada por la IA
-                        donde nos ayudamos y creamos juntos nuevos proyectos! ✨</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="slide">
-                    <div class="menu-item item-youtube">
-                      <a href="https://www.youtube.com/@IAHispano" target="_blank">
-                        <i class="fa-brands fa-youtube"></i>
-                      </a>
-                    </div>
-                    <div class="intro">
-                      <h1>Youtube</h1>
-                      <p>¡Somos una comunidad de gente apasionada por la IA
-                        donde nos ayudamos y creamos juntos nuevos proyectos! ✨</p>
-                    </div>
-                  </div>
-                </div>
+              <div class="toggle">
+                <a href="mailto:contacto@iahispano.com"
+                  >contacto@iahispano.com</a
+                >
               </div>
-            </div>
-            <div class="toggle">
-              <a href="mailto:contacto@iahispano.com">contacto@iahispano.com</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- Content End -->
-
-</body>
-
+    <!-- Content End -->
+  </body>
 </html>

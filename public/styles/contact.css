@@ -1,14 +1,14 @@
 /* SECCION REDES SOCIALES */
-#redes{
+#redes {
   display: block;
 }
-.swiper-slide{
+.swiper-slide {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 20px;
 }
-.slide{
+.slide {
   outline: none;
   width: 60vh;
   max-height: 230px;
@@ -21,61 +21,69 @@
   box-sizing: border-box;
   position: relative;
   border-radius: 10px;
-  bottom:58px;
+  bottom: 58px;
   transition: 0.4s;
-  background: rgb(27, 27, 27, .5);
+  background: rgb(27, 27, 27, 0.5);
 }
-.swiper-slide h1{
+.swiper-slide h1 {
   margin: 13px;
   font-size: 20px;
 }
-.swiper-slide p{
+.swiper-slide p {
   font-size: 13px;
   margin: 20px;
   display: none;
 }
-.swiper-slide:hover .intro{
+.swiper-slide:hover .intro {
   height: 106px;
   bottom: 120px;
   background: black;
 }
-.swiper-slide:hover p{
+.swiper-slide:hover p {
   display: contents;
 }
-.swiper-slide:hover i{
+.swiper-slide:hover i {
   transform: rotate(-25deg);
 }
 
 /* Iconos Redes Sociales */
-.menu-item a{
+.menu-item a {
   color: #fff;
   position: relative;
   display: block;
   margin: auto;
   font-size: 200px;
 }
-.menu-item.item-tiktok{
+.menu-item.item-tiktok {
   background: #3b5998;
 }
-.menu-item.item-tiktok:hover{
+.menu-item.item-tiktok:hover {
   box-shadow: 5px 0 20px #3b5998;
 }
-.menu-item.item-instagram{
-  background: radial-gradient(circle at 100% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%) #d6249f;
+.menu-item.item-instagram {
+  background: radial-gradient(
+      circle at 100% 107%,
+      #fdf497 0%,
+      #fdf497 5%,
+      #fd5949 45%,
+      #d6249f 60%,
+      #285aeb 90%
+    )
+    #d6249f;
 }
-.menu-item.item-instagram:hover{
+.menu-item.item-instagram:hover {
   box-shadow: 5px 0 20px #d6249f;
 }
-.menu-item.item-twitter{
+.menu-item.item-twitter {
   background: #55acee;
 }
-.menu-item.item-twitter:hover{
+.menu-item.item-twitter:hover {
   box-shadow: 5px 0 20px #55acee;
 }
-.menu-item.item-youtube{
+.menu-item.item-youtube {
   background: #fc0000;
 }
-.menu-item.item-youtube:hover{
+.menu-item.item-youtube:hover {
   box-shadow: 5px 0 20px #fc0000;
 }
 /*Fin Iconos Redes Sociales */
@@ -93,25 +101,24 @@
 }
 /*FIN SECCION REDES SOCIALES */
 
-
 /* RESPONSIVE */
-@media (max-width: 768px){
-  .swiper-wrapper .row{
+@media (max-width: 768px) {
+  .swiper-wrapper .row {
     display: flex;
     flex-direction: column;
   }
-  .swiper-slide{
+  .swiper-slide {
     margin-left: 0;
     margin-right: 0;
     margin-top: 15px;
   }
-  .slide{
+  .slide {
     width: 30vh;
     text-align: center;
   }
 }
-@media (max-width: 570px){
-  .slide{
+@media (max-width: 570px) {
+  .slide {
     width: 30vh;
     text-align: center;
   }

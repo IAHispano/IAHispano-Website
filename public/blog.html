@@ -1,46 +1,76 @@
 <!DOCTYPE html>
 <html lang="es-ES">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/standard.css" />
+    <link rel="stylesheet" href="./styles/mediaqueries.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./styles/base.css" />
-  <link rel="stylesheet" href="./styles/standard.css" />
-  <link rel="stylesheet" href="./styles/mediaqueries.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tags Start -->
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="IA Hispano" />
+    <meta
+      name="description"
+      content="La comunidad hispanohablante líder en Inteligencia Artificial aplicada a la música. Descubre las últimas tendencias, avances y proyectos relacionados con la IA y la música."
+    />
+    <meta property="og:site_name" content="IA Hispano" />
+    <meta property="og:title" content="IA Hispano" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="La comunidad hispanohablante líder en Inteligencia Artificial aplicada a la música. Descubre las últimas tendencias, avances y proyectos relacionados con la IA y la música."
+    />
+    <meta property="og:image" content="./img/favicon.png" />
+    <meta content="#150d27" name="theme-color" />
+    <meta content="#150d27" name="msapplication-navbutton-color" />
+    <meta property="og:url" content="https://iahispano.com" />
+    <link rel="canonical" href="https://iahispano.com" />
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <!-- Tags End -->
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&&display=swap" rel="stylesheet" />
-  <!-- Tags Start -->
-  <link rel="icon" type="image/x-icon" href="./img/favicon.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="author" content="IA Hispano"/>
-  <meta name="description" content="La comunidad hispanohablante líder en Inteligencia Artificial aplicada a la música. Descubre las últimas tendencias, avances y proyectos relacionados con la IA y la música."/>
-  <meta property="og:site_name" content="IA Hispano"/>
-  <meta property="og:title" content="IA Hispano"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:description" content="La comunidad hispanohablante líder en Inteligencia Artificial aplicada a la música. Descubre las últimas tendencias, avances y proyectos relacionados con la IA y la música."/>
-  <meta property="og:image" content="./img/favicon.png"/>
-  <meta content="#150d27" name="theme-color"/>
-  <meta content="#150d27" name="msapplication-navbutton-color"/>
-  <meta property="og:url" content="https://iahispano.com"/>
-  <link rel="canonical" href="https://iahispano.com"/>
-  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
-  <!-- Tags End -->
+    <script src="./scripts/menuMobile.js"></script>
+    <title>IA Hispano — Blog</title>
+  </head>
 
-  <script src="./scripts/menuMobile.js"></script>
-  <title>IA Hispano — Blog</title>
-</head>
+  <body class="main-background">
+    <!-- Navbar Start -->
+    <div class="navbar-container">
+      <div class="navbar">
+        <div class="nav-logo text-white bold">
+          <a href="index.html">IA HISPANO</a>
+        </div>
+        <div class="nav-stack">
+          <div class="nav-item"><a href="servicios.html">Servicios</a></div>
+          <div class="nav-item"><a href="faq.html">FAQ</a></div>
+          <div class="nav-item"><a href="videos.html">Vídeos</a></div>
+          <div class="nav-item"><a href="modelos.html">Modelos</a></div>
+          <div class="nav-item"><a href="enlaces.html">Enlaces</a></div>
+          <div class="nav-item active"><a href="blog.html">Blog</a></div>
+          <div class="nav-item"><a href="nosotros.html">Sobre nosotros</a></div>
+        </div>
+      </div>
+    </div>
 
-<body class="main-background">
-  
-      <!-- Navbar Start -->
-  <div class="navbar-container">
-    <div class="navbar">
-      <div class="nav-logo text-white bold"><a href="index.html">IA HISPANO</a></div>
-      <div class="nav-stack">
+    <!-- Mobile Navbar -->
+
+    <div class="menu-toggle">
+      <div class="icon"></div>
+    </div>
+    <div class="mobile-menu">
+      <div class="mobile-menu-content">
         <div class="nav-item"><a href="servicios.html">Servicios</a></div>
         <div class="nav-item"><a href="faq.html">FAQ</a></div>
         <div class="nav-item"><a href="videos.html">Vídeos</a></div>
@@ -50,61 +80,48 @@
         <div class="nav-item"><a href="nosotros.html">Sobre nosotros</a></div>
       </div>
     </div>
-  </div>
 
-  <!-- Mobile Navbar -->
+    <!-- Navbar End -->
 
-  <div class="menu-toggle">
-    <div class="icon"></div>
-  </div>
-  </div>
-  <div class="mobile-menu">
-    <div class="mobile-menu-content">
-      <div class="nav-item"><a href="servicios.html">Servicios</a></div>
-      <div class="nav-item"><a href="faq.html">FAQ</a></div>
-      <div class="nav-item"><a href="videos.html">Vídeos</a></div>
-      <div class="nav-item"><a href="modelos.html">Modelos</a></div>
-      <div class="nav-item"><a href="enlaces.html">Enlaces</a></div>
-      <div class="nav-item active"><a href="blog.html">Blog</a></div>
-      <div class="nav-item"><a href="nosotros.html">Sobre nosotros</a></div>
-    </div>
-  </div>
-  </div>
-
-  <!-- Navbar End -->
-
-  <!-- Content Start -->
-  <div class="container">
-    <div class="content">
-      <div class="main-gradient-text title semibold text-center">
-        Blog
-      </div>
-      <div class="">
-        <div class="row flex-wrap">
-         
-          <div class="col">
-            <a href="./blogs/1.html" style="text-decoration: none;"><div class="blog-box ">
-              <div class="flex mobile-column">
-                <div class="blog-image">
-                  <img src="img/iahispano.png" alt="">
-                </div>
-                <div class="blog-content">
-                  <div class="blog-title bold text-md">El poder de la Inteligencia Artificial: Un vistazo al futuro en español</div>
-                  <div class="blog-info service-comment">Por IA Hispano ・ 25/05/2023</div>
-                  <div class="blog-description text-sm">¡Bienvenidos a IA Hispano! En este primer post, nos adentraremos en el fascinante mundo de la Inteligencia Artificial (IA) y exploraremos cómo esta tecnología está transformando nuestras vidas de manera acelerada. En particular, nos enfocaremos en cómo la IA está evolucionando en el ámbito hispano y las oportunidades y desafíos que esto conlleva...</div>
-                </div>
-              </div>
-            </div></a>
+    <!-- Content Start -->
+    <div class="container">
+      <div class="content">
+        <div class="main-gradient-text title semibold text-center">Blog</div>
+        <div class="">
+          <div class="row flex-wrap">
+            <div class="col">
+              <a href="./blogs/1.html" style="text-decoration: none"
+                ><div class="blog-box">
+                  <div class="flex mobile-column">
+                    <div class="blog-image">
+                      <img src="img/iahispano.png" alt="" />
+                    </div>
+                    <div class="blog-content">
+                      <div class="blog-title bold text-md">
+                        El poder de la Inteligencia Artificial: Un vistazo al
+                        futuro en español
+                      </div>
+                      <div class="blog-info service-comment">
+                        Por IA Hispano ・ 25/05/2023
+                      </div>
+                      <div class="blog-description text-sm">
+                        ¡Bienvenidos a IA Hispano! En este primer post, nos
+                        adentraremos en el fascinante mundo de la Inteligencia
+                        Artificial (IA) y exploraremos cómo esta tecnología está
+                        transformando nuestras vidas de manera acelerada. En
+                        particular, nos enfocaremos en cómo la IA está
+                        evolucionando en el ámbito hispano y las oportunidades y
+                        desafíos que esto conlleva...
+                      </div>
+                    </div>
+                  </div>
+                </div></a
+              >
+            </div>
           </div>
-
-
-        
         </div>
       </div>
     </div>
-  </div>
-  <!-- Content End -->
-
-</body>
-
+    <!-- Content End -->
+  </body>
 </html>
