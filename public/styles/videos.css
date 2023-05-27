@@ -14,25 +14,31 @@ body {
   align-items: center;
   max-width: 960px;
   margin-top: 20px;
-  gap: 30px; /* Aumenta el espacio entre los cuadros */
+  gap: 30px;
+  /* Aumenta el espacio entre los cuadros */
   margin-bottom: 10%;
 }
 
 @media screen and (min-width: 768px) {
   .video-container {
-    max-width: 1280px; /* Aumenta el ancho máximo del contenedor de videos */
+    max-width: 1280px;
+    /* Aumenta el ancho máximo del contenedor de videos */
   }
 
   .video-wrapper {
-    width: calc(25% - 30px); /* Ajusta el ancho de los cuadros de video */
-    height: 300px; /* Ajusta la altura de los cuadros de video */
+    width: calc(25% - 30px);
+    /* Ajusta el ancho de los cuadros de video */
+    height: 300px;
+    /* Ajusta la altura de los cuadros de video */
   }
 }
 
 .video-wrapper {
   position: relative;
-  width: 320px; /* Cambia el ancho del cuadro de video */
-  height: 180px; /* Cambia la altura del cuadro de video */
+  width: 320px;
+  /* Cambia el ancho del cuadro de video */
+  height: 180px;
+  /* Cambia la altura del cuadro de video */
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -46,27 +52,29 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.7; /* Ajusta la opacidad de la imagen normal */
-  transition: transform 0.2s, opacity 0.2s; /* Agrega transición para la transformación y la opacidad */
-  transform: translateX(
-    0
-  ); /* Inicialmente la imagen está en la posición original */
+  opacity: 0.7;
+  /* Ajusta la opacidad de la imagen normal */
+  transition: transform 0.2s, opacity 0.2s;
+  /* Agrega transición para la transformación y la opacidad */
+  transform: translateX(0);
+  /* Inicialmente la imagen está en la posición original */
   background-repeat: no-repeat;
-  background-size: cover; /* Ajusta la imagen para cubrir completamente el cuadro */
-  background-position: center; /* Centra la imagen dentro del cuadro */
+  background-size: cover;
+  /* Ajusta la imagen para cubrir completamente el cuadro */
+  background-position: center;
+  /* Centra la imagen dentro del cuadro */
 }
 
 .video-wrapper:hover::before {
-  opacity: 0; /* Hace que la imagen normal desaparezca completamente al poner el cursor encima */
-  transform: translateX(
-    -100%
-  ); /* Mueve la imagen hacia la izquierda al poner el cursor encima */
+  opacity: 0;
+  /* Hace que la imagen normal desaparezca completamente al poner el cursor encima */
+  transform: translateX(-100%);
+  /* Mueve la imagen hacia la izquierda al poner el cursor encima */
 }
 
 .video-wrapper:hover {
-  transform: scale(
-    1.1
-  ); /* Aumenta el tamaño del cuadro al poner el cursor encima */
+  transform: scale(1.1);
+  /* Aumenta el tamaño del cuadro al poner el cursor encima */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 

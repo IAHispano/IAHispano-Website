@@ -1,12 +1,15 @@
 .text-sm {
   font-size: 18px;
 }
+
 .text-md {
   font-size: 24px;
 }
+
 .text-lg {
   font-size: 32px;
 }
+
 .text-xl {
   font-size: 48px;
   line-height: 55px;
@@ -18,20 +21,25 @@
     width: 640px;
     margin: auto;
   }
+
   .text-sm {
     font-size: 18px;
   }
+
   .text-md {
     font-size: 24px;
   }
+
   .text-lg {
     font-size: 48px;
   }
+
   .text-xl {
     font-size: 104px;
     line-height: 74px;
   }
 }
+
 @media (max-width: 640px) {
   .service-box {
     margin: 0;
@@ -45,22 +53,28 @@
     width: 868px;
     margin: auto;
   }
+
   .text-sm {
     font-size: 14px;
   }
+
   .text-md {
     font-size: 32px;
   }
+
   .text-lg {
     font-size: 40px;
   }
+
   .text-xl {
     font-size: 100px;
     line-height: 90px;
   }
+
   .menu-toggle {
     display: none;
   }
+
   .button-xl {
     padding: 20px 80px;
   }
@@ -72,15 +86,19 @@
     width: 1024px;
     margin: auto;
   }
+
   .text-sm {
     font-size: 14px;
   }
+
   .text-md {
     font-size: 32px;
   }
+
   .text-lg {
     font-size: 40px;
   }
+
   .text-xl {
     font-size: 114px;
     line-height: 114px;
@@ -93,15 +111,19 @@
     width: 1280px;
     margin: auto;
   }
+
   .text-sm {
     font-size: 14px;
   }
+
   .text-md {
     font-size: 25px;
   }
+
   .text-lg {
     font-size: 40px;
   }
+
   .text-xl {
     font-size: 110px;
   }
@@ -117,12 +139,15 @@
   .text-sm {
     font-size: 18px;
   }
+
   .text-md {
     font-size: 25px;
   }
+
   .text-lg {
     font-size: 48px;
   }
+
   .text-xl {
     font-size: 110px;
   }

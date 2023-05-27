@@ -1,11 +1,9 @@
 body {
-  background: linear-gradient(
-    180deg,
-    #000 0,
-    #0e0044 40%,
-    #0e0044 60%,
-    #000 100%
-  );
+  background: linear-gradient(180deg,
+      #000 0,
+      #0e0044 40%,
+      #0e0044 60%,
+      #000 100%);
   color: #fff;
   font-family: "Inter", sans-serif;
 }
@@ -24,20 +22,29 @@ body {
 /* Models */
 
 .container {
-  max-width: 960px; /* Ancho máximo del contenedor */
-  margin: 0 auto; /* Centrar el contenedor en la página */
-  padding-bottom: 100px; /* Ajusta el valor según el espacio adicional deseado */
+  max-width: 960px;
+  /* Ancho máximo del contenedor */
+  margin: 0 auto;
+  /* Centrar el contenedor en la página */
+  padding-bottom: 100px;
+  /* Ajusta el valor según el espacio adicional deseado */
 }
 
 .model-gallery {
-  display: grid; /* Cambiar a un sistema de cuadrícula */
-  grid-template-columns: repeat(4, 1fr); /* Crear 4 columnas de igual tamaño */
-  justify-items: center; /* Centrar los elementos horizontalmente */
-  justify-content: center; /* Centrar las columnas verticalmente */
-  grid-gap: 20px; /* Espacio entre los elementos */
+  display: grid;
+  /* Cambiar a un sistema de cuadrícula */
+  grid-template-columns: repeat(4, 1fr);
+  /* Crear 4 columnas de igual tamaño */
+  justify-items: center;
+  /* Centrar los elementos horizontalmente */
+  justify-content: center;
+  /* Centrar las columnas verticalmente */
+  grid-gap: 20px;
+  /* Espacio entre los elementos */
   margin-top: 40px;
   position: relative;
 }
+
 article {
   position: relative;
   width: 250px;
@@ -48,9 +55,12 @@ article {
 }
 
 article img {
-  height: 400px; /* Establece la altura deseada para las imágenes */
-  width: 100%; /* Asegura que las imágenes ocupen el ancho completo del contenedor */
-  object-fit: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor sin deformarse */
+  height: 400px;
+  /* Establece la altura deseada para las imágenes */
+  width: 100%;
+  /* Asegura que las imágenes ocupen el ancho completo del contenedor */
+  object-fit: cover;
+  /* Ajusta el tamaño de la imagen para cubrir el contenedor sin deformarse */
 }
 
 article img:first-child {
@@ -58,9 +68,8 @@ article img:first-child {
 }
 
 article:hover img:first-child {
-  filter: blur(
-    10px
-  ); /* Aplicamos un filtro de desenfoque a la imagen de fondo al pasar el ratón por encima */
+  filter: blur(10px);
+  /* Aplicamos un filtro de desenfoque a la imagen de fondo al pasar el ratón por encima */
 }
 
 article img:last-child {
@@ -84,15 +93,12 @@ article::before {
   content: "";
   position: absolute;
   bottom: 0;
-  height: calc(
-    100% - 400px
-  ); /* Ajusta el tamaño para que coincida con la altura de la imagen */
+  height: calc(100% - 400px);
+  /* Ajusta el tamaño para que coincida con la altura de la imagen */
   width: 256px;
-  background-image: linear-gradient(
-    to bottom,
-    transparent 0%,
-    rgba(0, 0, 0, 0.7)
-  );
+  background-image: linear-gradient(to bottom,
+      transparent 0%,
+      rgba(0, 0, 0, 0.7));
   opacity: 0;
   border-radius: 4px;
   overflow: visible;
@@ -186,8 +192,10 @@ article:hover img:last-child {
 ::-webkit-scrollbar {
   display: none;
 }
+
 /* Estilos para dispositivos móviles */
 @media screen and (max-width: 767px) {
+
   /* Ajustes de la barra de navegación en dispositivos móviles */
   .navbar {
     flex-direction: column;
@@ -249,6 +257,7 @@ article:hover img:last-child {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
+
   /* Media Queries */
 
   @media screen and (max-width: 768px) {
@@ -256,6 +265,7 @@ article:hover img:last-child {
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       grid-gap: 10px;
     }
+
     .click-image {
       text-align: center;
       display: flex;
@@ -269,6 +279,7 @@ article:hover img:last-child {
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       grid-gap: 5px;
     }
+
     .click-image {
       text-align: center;
       display: flex;
@@ -276,6 +287,7 @@ article:hover img:last-child {
       align-items: center;
     }
   }
+
   @media screen and (max-width: 768px) {
     .click-image {
       text-align: center;
@@ -297,10 +309,12 @@ article:hover img:last-child {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
 }
+
 .fade-out {
   animation: fade-out 1s;
 }
@@ -309,6 +323,7 @@ article:hover img:last-child {
   from {
     opacity: 1;
   }
+
   to {
     opacity: 0;
   }
