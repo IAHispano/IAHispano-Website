@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Array de URL de los videos de YouTube
   const videoUrls = [
+    "https://www.youtube.com/watch?v=t1RNsLM87TI",
     "https://www.youtube.com/watch?v=bWSG2yi-VJA",
     "https://www.youtube.com/watch?v=sD5gGMdUndE",
     "https://www.youtube.com/watch?v=YkXAFMp6fj0",
@@ -70,6 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function getVideoTitle(videoUrl) {
     // Aquí puedes introducir manualmente los títulos de los videos correspondientes
     const videoTitles = {
+      "https://www.youtube.com/watch?v=t1RNsLM87TI": "ENTRENAMIENTO RVC",
       "https://www.youtube.com/watch?v=bWSG2yi-VJA": "COMO HACER UN DATASET",
       "https://www.youtube.com/watch?v=sD5gGMdUndE": "CREAR CANCIONES CON IA",
       "https://www.youtube.com/watch?v=YkXAFMp6fj0": "CREAR MODELOS IA",
