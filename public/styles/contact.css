@@ -152,59 +152,105 @@ a {
 
 }
 
-/* Estilos para dispositivos móviles */
-@media only screen and (max-width: 768px) {
+/* Estilos específicos para dispositivos móviles */
+
+@media only screen and (max-width: 1267px) {
+
   .title-container {
-    text-align: center;
-    margin-left: 0;
-    max-width: 100%;
-    margin-top: 100px;
-    margin-bottom: 5px;
+    text-align: left;
+    margin-left: 40px;
+    max-width: 80%;
   }
-
   .title {
-    font-size: 48px;
-    margin-top: 100px;
+    font-size: 64px;
+    margin-top: 40px;
     margin-bottom: 5px;
   }
-
   .service-container {
-    top: auto;
-    right: auto;
-    justify-content: center;
-    max-width: 100%;
-    margin-top: 100px;
-    margin-bottom: 5px;
+    top: 800px; 
+    left: 80px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column; /* Cambiar a un diseño de columna */
 
   }
-
-  .service-box {
-    margin: 30px 10px;
-    max-width: 100%;
-    min-width: 200px;
+  
+  
+  #service-box1 {
+    
+    right: 0;
   }
-
-  .buttonp {
-    top: auto;
-    right: auto;
-    justify-content: center;
-    max-width: 100%;
-    margin-top: 50px;
-    margin-bottom: 5px;
+  
+  #service-box2 {
+    
+    left: 0;
   }
-
-  .service-comment {
-    top: auto;
-    right: auto !important;
+  
+  .service-content {
     text-align: center;
-    margin-top: 115px;
-    margin-bottom: 5px;
   }
-
-  .service-box {
-
-    margin: 500px 5000px;
-
+  
+  .service-subtitle {
+    font-size: 16px;
+    color: #ccc;
+  }
+  
+  .large-icon {
+    font-size: 120px !important;
+  }
+  
+  .service-box .service-title  {
+    display: inline-block;
+    text-align: center;
+    border-bottom: none !important;
+    font-weight: 700;
+    font-size: 26px;
+    margin: auto;
+    margin-top: 30px;
+  }
+  
+  .service-box .primary-button {
+    display: block;
+    margin: 10px 40px;
+    margin-top: 40px;
+    padding: 20px 0;
+    border-radius: 25px;
+    font-weight: 700;
+  }
+  .primary-button {
+    position: relative;
+    background: #000;
+    border-image-slice: 1;
+    background-clip: padding-box;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin: auto;
+    border-radius: 35px;
+    transition: background-color .8s ease,color .8s ease;
+    
+  }
+  .buttonp {
+    position: relative;
+    top: 900px; 
+    left: 150px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 80px; 
+    border-radius: 24px;
+    margin-bottom: 20px;
+  }
+  .service-comment {
+    position: relative;
+    font-style: italic;
+    color: #9f9f9f;
+    font-size: 12px;
+    top: 900px; 
+    left: 10px !important;
+    text-align: right;
+    max-width: 90%;
+  
   }
 
 }
