@@ -1,143 +1,256 @@
-/* SECCION REDES SOCIALES */
-#redes {
-  display: block;
+.title-container {
+  text-align: left;
+  margin-left: 80px;
+  max-width: 40%;
 }
 
-.swiper-slide {
+.main-gradient-text {
+  background: -webkit-linear-gradient(0deg, #cb5eee, #4be1ec 37%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title {
+  font-size: 64px;
+  margin-top: 200px;
+  margin-bottom: 5px;
+}
+
+/* Cuadros */
+.service-container {
+  position: absolute;
+  top: 200px; 
+  right: 0;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
-  justify-content: center;
-  margin: 20px;
+  max-width: 60%;
+  margin-right: 80px; 
+  border-radius: 24px;
 }
 
-.slide {
-  outline: none;
-  width: 60vh;
-  max-height: 230px;
+
+#service-box1 {
+  
+  right: 0;
 }
 
-.intro {
-  height: 45px;
-  width: 100%;
+#service-box2 {
+  
+  left: 0;
+}
+
+.service-content {
   text-align: center;
-  color: white;
-  box-sizing: border-box;
-  position: relative;
-  border-radius: 10px;
-  bottom: 58px;
-  transition: 0.4s;
-  background: rgb(27, 27, 27, 0.5);
 }
 
-.swiper-slide h1 {
-  margin: 13px;
-  font-size: 20px;
+.service-subtitle {
+  font-size: 16px;
+  color: #ccc;
 }
 
-.swiper-slide p {
-  font-size: 13px;
-  margin: 20px;
-  display: none;
+.large-icon {
+  font-size: 120px !important;
 }
 
-.swiper-slide:hover .intro {
-  height: 106px;
-  bottom: 120px;
-  background: black;
-}
-
-.swiper-slide:hover p {
-  display: contents;
-}
-
-.swiper-slide:hover i {
-  transform: rotate(-25deg);
-}
-
-/* Iconos Redes Sociales */
-.menu-item a {
-  color: #fff;
-  position: relative;
-  display: block;
+.service-box .service-title  {
+  display: inline-block;
+  text-align: center;
+  border-bottom: none !important;
+  font-weight: 700;
+  font-size: 26px;
   margin: auto;
-  font-size: 200px;
+  margin-top: 30px;
 }
 
-.menu-item.item-tiktok {
-  background: #3b5998;
+.service-box .primary-button {
+  display: block;
+  margin: 10px 40px;
+  margin-top: 40px;
+  padding: 20px 0;
+  border-radius: 25px;
+  font-weight: 700;
 }
-
-.menu-item.item-tiktok:hover {
-  box-shadow: 5px 0 20px #3b5998;
+.primary-button {
+  position: relative;
+  background: #000;
+  border-image-slice: 1;
+  background-clip: padding-box;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  margin: auto;
+  border-radius: 35px;
+  transition: background-color .8s ease,color .8s ease;
 }
-
-.menu-item.item-instagram {
-  background: radial-gradient(circle at 100% 107%,
-      #fdf497 0%,
-      #fdf497 5%,
-      #fd5949 45%,
-      #d6249f 60%,
-      #285aeb 90%) #d6249f;
+a {
+  color: #007bec;
 }
-
-.menu-item.item-instagram:hover {
-  box-shadow: 5px 0 20px #d6249f;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter,sans-serif;
 }
-
-.menu-item.item-twitter {
-  background: #55acee;
-}
-
-.menu-item.item-twitter:hover {
-  box-shadow: 5px 0 20px #55acee;
-}
-
-.menu-item.item-youtube {
-  background: #fc0000;
-}
-
-.menu-item.item-youtube:hover {
-  box-shadow: 5px 0 20px #fc0000;
-}
-
-/*Fin Iconos Redes Sociales */
-.toggle {
+.text-center {
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 10px;
-  border-width: 1px;
-  border-style: solid;
-  border-image: linear-gradient(to top, #863ece, #007bec) 1;
-  border-radius: 50em;
-  color: white;
-  cursor: pointer;
+}
+.service-box {
+  position: relative;
+  background: #000;
+  border: 1px solid transparent;
+  background-clip: padding-box;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 24px;
+  padding: 30px 10px;
+  margin: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  min-width: 300px;
+}
+.primary-button::after {
+  position: relative;
+  background: #000;
+  border-image-slice: 1;
+  background-clip: padding-box;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  margin: auto;
+  border-radius: 35px;
+  transition: background-color .8s ease,color .8s ease;
 }
 
-/*FIN SECCION REDES SOCIALES */
+::-webkit-scrollbar {
+  width: 0;
+}
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .swiper-wrapper .row {
+/* Button */
+.buttonp {
+  position: absolute;
+  top: 660px; 
+  right: 140px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 60%;
+  margin-right: 80px; 
+  border-radius: 24px;
+}
+
+/* Comment */
+.service-comment {
+  position: relative;
+  font-style: italic;
+  color: #9f9f9f;
+  font-size: 12px;
+  top: 180px; 
+  right: 265px !important;
+  text-align: right;
+
+}
+
+/* Estilos específicos para dispositivos móviles */
+
+@media only screen and (max-width: 1267px) {
+
+  .title-container {
+    text-align: left;
+    margin-left: 40px;
+    max-width: 80%;
+  }
+  .title {
+    font-size: 64px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+  }
+  .service-container {
+    top: 800px; 
+    left: 80px;
+    border-radius: 24px;
     display: flex;
-    flex-direction: column;
-  }
+    flex-direction: column; /* Cambiar a un diseño de columna */
 
-  .swiper-slide {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 15px;
   }
-
-  .slide {
-    width: 30vh;
+  
+  
+  #service-box1 {
+    
+    right: 0;
+  }
+  
+  #service-box2 {
+    
+    left: 0;
+  }
+  
+  .service-content {
     text-align: center;
   }
-}
-
-@media (max-width: 570px) {
-  .slide {
-    width: 30vh;
-    text-align: center;
+  
+  .service-subtitle {
+    font-size: 16px;
+    color: #ccc;
   }
+  
+  .large-icon {
+    font-size: 120px !important;
+  }
+  
+  .service-box .service-title  {
+    display: inline-block;
+    text-align: center;
+    border-bottom: none !important;
+    font-weight: 700;
+    font-size: 26px;
+    margin: auto;
+    margin-top: 30px;
+  }
+  
+  .service-box .primary-button {
+    display: block;
+    margin: 10px 40px;
+    margin-top: 40px;
+    padding: 20px 0;
+    border-radius: 25px;
+    font-weight: 700;
+  }
+  .primary-button {
+    position: relative;
+    background: #000;
+    border-image-slice: 1;
+    background-clip: padding-box;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin: auto;
+    border-radius: 35px;
+    transition: background-color .8s ease,color .8s ease;
+    
+  }
+  .buttonp {
+    position: relative;
+    top: 900px; 
+    left: 150px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 80px; 
+    border-radius: 24px;
+    margin-bottom: 20px;
+  }
+  .service-comment {
+    position: relative;
+    font-style: italic;
+    color: #9f9f9f;
+    font-size: 12px;
+    top: 900px; 
+    left: 10px !important;
+    text-align: right;
+    max-width: 90%;
+  
+  }
+
 }
