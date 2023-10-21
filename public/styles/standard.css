@@ -550,15 +550,15 @@ a {
 
 .faq-answer {
   padding-right: 32px;
-  display: none;
   overflow: hidden;
-  transition: max-height 0.3s ease;
+  max-height: 0;
+  transition: max-height 0.3s ease-in-out;
 }
 
 .faq-show {
-  display: block;
+  max-height: 1000px;
+  transition: max-height 0.3s ease-in-out;
 }
-
 .faq-icon {
   width: 40px;
   height: 40px;

@@ -1,12 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Array de URL de los videos de YouTube
   const videoUrls = [
+    "https://www.youtube.com/watch?v=g97qO2meh0Q",
+    "https://www.youtube.com/watch?v=N_mugYwUhT8",
     "https://www.youtube.com/watch?v=t1RNsLM87TI",
     "https://www.youtube.com/watch?v=bWSG2yi-VJA",
-    "https://www.youtube.com/watch?v=sD5gGMdUndE",
-    "https://www.youtube.com/watch?v=YkXAFMp6fj0",
-    "https://www.youtube.com/watch?v=ws9CgWTFwg4",
-    "https://www.youtube.com/watch?v=OyC6A0AsRRE",
+    "https://www.youtube.com/watch?v=1Ac7HiG7r3c",
     "https://www.youtube.com/watch?v=uyb2iDjR970",
     "https://www.youtube.com/watch?v=7UvshC1Qdps",
     "https://www.youtube.com/watch?v=eOBOtYbt_3w",
@@ -71,12 +70,11 @@ document.addEventListener("DOMContentLoaded", function () {
   function getVideoTitle(videoUrl) {
     // Aquí puedes introducir manualmente los títulos de los videos correspondientes
     const videoTitles = {
+      "https://www.youtube.com/watch?v=N_mugYwUhT8": "CLONAR VOCES CON KITS.AI",
+      "https://www.youtube.com/watch?v=g97qO2meh0Q": "CREAR CANCIONES CON IA",
       "https://www.youtube.com/watch?v=t1RNsLM87TI": "ENTRENAMIENTO RVC",
       "https://www.youtube.com/watch?v=bWSG2yi-VJA": "COMO HACER UN DATASET",
-      "https://www.youtube.com/watch?v=sD5gGMdUndE": "CREAR CANCIONES CON IA",
-      "https://www.youtube.com/watch?v=YkXAFMp6fj0": "CREAR MODELOS IA",
-      "https://www.youtube.com/watch?v=ws9CgWTFwg4": "TUTORIAL RVC",
-      "https://www.youtube.com/watch?v=OyC6A0AsRRE": "SAIKO - UN VERANO SIN TI",
+      "https://www.youtube.com/watch?v=1Ac7HiG7r3c": "EN TO' LAO'",
       "https://www.youtube.com/watch?v=uyb2iDjR970": "ANTES DE PERDERTE",
       "https://www.youtube.com/watch?v=7UvshC1Qdps": "POLARIS",
       "https://www.youtube.com/watch?v=eOBOtYbt_3w": `SHE DON'T GIVE A FO`,
